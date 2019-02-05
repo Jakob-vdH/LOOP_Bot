@@ -1,0 +1,53 @@
+{
+    "type": "AdaptiveCard",
+    "horizontalAlignment": "Center",
+    "separator": true,
+    "height": "stretch",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "horizontalAlignment": "Center",
+            "spacing": "large",
+            "height": "stretch",
+            "columns": [
+                {
+                    "type": "Column",
+                    "spacing": "large",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "size": "medium",
+                            "text": "Welche Aussage zu Objekten trifft zu?",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Objekte brauchen keinen eindeutigen Bezeichner",
+            "data": {
+                "intent": "wrong"
+            }
+        },
+        {
+            "type": "Action.Submit",
+            "title": "Objekte besitzen mindestens 2 Attribute",
+            "data": {
+                "intent": "wrong"
+            }
+        },
+        {
+            "type": "Action.Submit",
+            "title": "Die Eigenschaften eines Objektes werden über Attribut-Werte bestimmt",
+            "data": {
+                "intent": "right"
+            }
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

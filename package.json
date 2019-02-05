@@ -1,0 +1,21 @@
+{
+  "name": "loop_bot",
+  "version": "0.0.1",
+  "description": "TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./server.js"
+  },
+  "author": "Jakob von der Haar",
+  "license": "ISC",
+  "dependencies": {
+    "@types/restify": "^7.2.7",
+    "botbuilder": "^4.2.0",
+    "botbuilder-ai": "^4.2.0",
+    "botbuilder-dialogs": "^4.2.0",
+    "botframework-config": "^4.2.0",
+    "restify": "^7.6.0",
+    "typescript": "^3.2.4"
+  }
+}
