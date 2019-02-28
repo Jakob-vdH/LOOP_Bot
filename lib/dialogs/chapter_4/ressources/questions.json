@@ -1,0 +1,15 @@
+{
+    "questions": [
+        {
+            "id": "c4_1",
+            "mkdTitel": "**4.1 TEMPLATE**\nWelche Aussage zu XY trifft zu?",
+            "mkdText":  "**(1)** Antwortmöglichkeit 1 Text \n**(2)** Antwortmöglichkeit 2 Text \n**(3)** Antwortmöglichkeit 3 Text",
+            "mkdAnwser": "Text zur Erklärung der richtigen Antwort \n( richtig ist **Anwort 3** )",
+            "titel": "4.1 TEMPLATE\nWelche Aussage zu XY trifft zu?",
+            "text": "(1) Antwortmöglichkeit 1 Text \n(2) Antwortmöglichkeit 2 Text \n(3) Antwortmöglichkeit 3 Text",
+            "anser": "Text zur Erklärung der richtigen Antwort \n( richtig ist Anwort 3 )",
+            "answerCount": 3,
+            "rightAnswerNr": 3
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "questions": [
+        {
+            "id": "c1_1",
+            "mkdTitel": "**1.1 Objekte**\nWelche Aussage zu Objekten trifft zu?",
+            "mkdText":  "**(1)** Objekte brauchen keinen eindeutigen Bezeichner \n**(2)** Objekte besitzen mindestens 2 Attribute \n**(3)** Die Eigenschaften eines Objektes werden über Attribut-Werte bestimmt",
+            "mkdAnwser": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen. \n( richtig ist **Anwort 3** )",
+            "titel": "1.1 Objekte\nWelche Aussage zu Objekten trifft zu?",
+            "text": "(1) Objekte brauchen keinen eindeutigen Bezeichner \n(2) Objekte besitzen mindestens 2 Attribute \n(3) Die Eigenschaften eines Objektes werden über Attribut-Werte bestimmt",
+            "anser": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen. \n( richtig ist Anwort 3 )",
+            "answerCount": 3,
+            "rightAnswerNr": 3
+        },
+        {
+            "id": "c1_2",
+            "mkdTitel": "**1.2 Objekte**\nWelche Aussage zu Objekten trifft zu?",
+            "mkdText":  "**(1)** Objekte brauchen keinen eindeutigen Bezeichner \n**(2)** Objekte besitzen mindestens 2 Attribute \n**(3)** Die Eigenschaften eines Objektes werden über Attribut-Werte bestimmt",
+            "mkdAnwser": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen. \n( richtig ist **Anwort 3** )",
+            "titel": "1.1 Objekte\nWelche Aussage zu Objekten trifft zu?",
+            "text": "(1) Objekte brauchen keinen eindeutigen Bezeichner \n(2) Objekte besitzen mindestens 2 Attribute \n(3) Die Eigenschaften eines Objektes werden über Attribut-Werte bestimmt",
+            "anser": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen. \n( richtig ist Anwort 3 )",
+            "answerCount": 3,
+            "rightAnswerNr": 3
+        }
+    ]
+}
