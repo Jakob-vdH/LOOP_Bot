@@ -1,0 +1,32 @@
+{
+    "goodJob": {
+        "links": [
+            "https://media1.giphy.com/media/l4q7VhGsL6BnXJrc4/200w.webp",
+            "https://media0.giphy.com/media/3o7abB06u9bNzA8lu8/200w.webp",
+            "https://media2.giphy.com/media/3ohs4xsq0oEhqC4why/200w.webp",
+            "https://media2.giphy.com/media/9xt1MUZqkneFiWrAAD/200w.webp",
+            "https://media2.giphy.com/media/l0Ex3vQtX5VX2YtAQ/200w.webp",
+            "https://media1.giphy.com/media/xTiN0uId37jNZCMLSM/200w.webp",
+            "https://media.giphy.com/media/xT9Igt00U6qU9ZeUww/200w.webp",
+            "https://media3.giphy.com/media/26xBABFAnPoa4BZMk/100.webp",
+            "https://media0.giphy.com/media/VerIk7pS3iEEg/200w.webp"
+        ]
+    },
+    "error": {
+        "links": [
+            "https://media0.giphy.com/media/rCAVWjzASyNlm/200w.webp",
+            "https://media3.giphy.com/media/l1Ksy7xHM9qhumWxa/100.webp",
+            "https://media2.giphy.com/media/3ohuAckjLoRKKZgmS4/100.webp",
+            "https://media1.giphy.com/media/Khurh5g5bBIkg/100.webp",
+            "https://media.giphy.com/media/xTiIzpFQGqdk2JX3QA/200w.webp",
+            "https://media.giphy.com/media/3o7bu77hZGlphvF6j6/200w.webp"
+        ]
+    },
+    "greeting": {
+        "links": [
+            "https://media2.giphy.com/media/l3q2F3dkTCpQnIhAQ/200w.webp",
+            "https://media.giphy.com/media/3owzWlQXHs465TJRGo/200w.webp",
+            "https://media2.giphy.com/media/VeBeB9rR524RW/100.webp"
+        ]
+    }   
+}
