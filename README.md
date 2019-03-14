@@ -12,3 +12,10 @@ Currently not using typescript.
 1. `npm install`
 
 2. `node server.js`
+
+# 2. 
+
+# 3. Structure
+
+##Gifs##
+Gifs are integrated via links to giphy being activated in the markdown rendering.
