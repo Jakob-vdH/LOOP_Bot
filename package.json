@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node ./server.js"
+    "prod": "tsc && node ./server.js",
+    "start": "node ./server.js",
+    "watch": "nodemon ./server.js"
   },
   "author": "Jakob von der Haar",
   "license": "ISC",
@@ -15,6 +17,7 @@
     "botbuilder-ai": "^4.2.0",
     "botbuilder-dialogs": "^4.2.0",
     "botframework-config": "^4.2.0",
+    "nodemon": "^1.18.10",
     "restify": "^7.6.0",
     "typescript": "^3.2.4"
   }
