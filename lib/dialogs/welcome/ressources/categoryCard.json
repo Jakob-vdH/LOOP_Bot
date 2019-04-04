@@ -66,13 +66,6 @@
             "data": {
                 "intent": "chapter_5"
             }
-        },
-        {
-            "type": "Action.Submit",
-            "title": "Üben für die Abschlussprüfung",
-            "data": {
-                "intent": "chapter_final"
-            }
         }
     ],
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
