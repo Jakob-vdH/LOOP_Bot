@@ -1,0 +1,13 @@
+{
+    "alwaysFeedback": true,
+    "annonymizedFeedback": true,
+    "annonymizedLogger": true,
+    "poolSize": 10,
+    "db": {
+        "server": "mongo:27017",
+        "server2": "127.0.0.1:27017",
+        "database": "userProfiles",
+        "database2": "feedback",
+        "database3": "logging"
+    }
+}
