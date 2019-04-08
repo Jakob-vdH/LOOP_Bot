@@ -17,6 +17,8 @@
     "botbuilder-ai": "^4.2.0",
     "botbuilder-dialogs": "^4.2.0",
     "botframework-config": "^4.2.0",
+    "mongodb": "^3.2.2",
+    "mongoose": "^5.4.22",
     "nodemon": "^1.18.10",
     "restify": "^7.6.0",
     "typescript": "^3.2.4"
