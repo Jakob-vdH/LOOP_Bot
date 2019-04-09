@@ -1,5 +1,61 @@
 {
+    "chapter1": [
+        {
+            "id": "c1_1",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Welche Aussage zu Objekten trifft zu?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Objekte brauchen keinen eindeutigen Bezeichner"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Objekte besitzen mindestens 2 Attribute"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Die Eigenschaften eines Objektes werden über Attribut-Werte bestimmt"}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen." }
+            ]
+        }
+    ],
+    "chapter2": [],
+    "chapter3": [],
+    "chapter4": [],
+    "chapter5": [],
     "questions": [
+        {
+            "id": "",
+            "type": "",
+            "mkdTitel": "",
+            "mkdText": "",
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOptions": "" }
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswer": ""
+        },
         {
             "id": "c1_1",
             "type": "mc",
