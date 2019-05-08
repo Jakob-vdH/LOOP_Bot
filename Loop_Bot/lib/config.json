@@ -14,5 +14,8 @@
         "applicationId": "ccb76831-0c05-462b-bf0b-2ded475eaf5d",
         "endpoint": "https://westeurope.api.cognitive.microsoft.com",
         "endpointKey": "7c106d18093a4c79890f68ff6f71aebe"
+    },
+    "recommender": {
+        "countTo": 3
     }
 }
