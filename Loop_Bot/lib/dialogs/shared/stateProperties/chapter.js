@@ -1,7 +1,7 @@
 const { shuffle } = require("../helpers");
 const poolSize = require("../../../config.json").poolSize;
 const Recommender = require("./recommenderDictionary.json");
-const recommenderFilter = require("../../../config.json").recommender.countTo; //  3; //TODO: in config
+const recommenderFilter = require("../../../config.json").recommender.countTo; // for how many wrong answers with the same keyword the bot searches before recommending to take another look
 
 class Chapter {
     /**
