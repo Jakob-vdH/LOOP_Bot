@@ -1,4 +1,12 @@
 {   
-    "Klasse": "https://courses.edx.org/courses/course-v1:TUMx+LOOPx+3T2018/courseware/2357891198fa455ea2e7f4581822e2ed/5dfa2e99e7c4465ea42c5e18dc498752/1?activate_block_id=block-v1%3ATUMx%2BLOOPx%2B3T2018%2Btype%40vertical%2Bblock%403e77727132af40ad8c97053703b43e15",
-    "Objekt": "https://courses.edx.org/courses/course-v1:TUMx+LOOPx+3T2018/courseware/2357891198fa455ea2e7f4581822e2ed/6f335a8606b44200b02274d2402dd221/1?activate_block_id=block-v1%3ATUMx%2BLOOPx%2B3T2018%2Btype%40vertical%2Bblock%40d8c125ddfee5450688354df795e9235e"
+    "Klassen": "https://courses.edx.org/courses/course-v1:TUMx+LOOPx+3T2018/courseware/2357891198fa455ea2e7f4581822e2ed/5dfa2e99e7c4465ea42c5e18dc498752/1?activate_block_id=block-v1%3ATUMx%2BLOOPx%2B3T2018%2Btype%40vertical%2Bblock%403e77727132af40ad8c97053703b43e15",
+    "Objekte": "https://courses.edx.org/courses/course-v1:TUMx+LOOPx+3T2018/courseware/2357891198fa455ea2e7f4581822e2ed/6f335a8606b44200b02274d2402dd221/1?activate_block_id=block-v1%3ATUMx%2BLOOPx%2B3T2018%2Btype%40vertical%2Bblock%40d8c125ddfee5450688354df795e9235e",
+    "Algorithmen": "https://courses.edx.org/courses/course-v1:TUMx+LOOPx+3T2018/courseware/8e02f0b4b4834f4e8083caf85fd328bc/2a33b5ab585246ffa932153303ea0b08/1?activate_block_id=block-v1%3ATUMx%2BLOOPx%2B3T2018%2Btype%40vertical%2Bblock%40742dc928089940afa1bd7d52e8e03f25",
+    "JavaKlasse": "https://courses.edx.org/courses/course-v1:TUMx+LOOPx+3T2018/courseware/1ca8227765a04a0aa80a4ec20c0a5f01/34dfe5b299c04fcdbf492cc7846ec869/2?activate_block_id=block-v1%3ATUMx%2BLOOPx%2B3T2018%2Btype%40vertical%2Bblock%40026366777c0e4218b27af2fd1589d151",
+    "JavaMethode": "https://courses.edx.org/courses/course-v1:TUMx+LOOPx+3T2018/courseware/1ca8227765a04a0aa80a4ec20c0a5f01/cf02dbcb137d48abb98423b743e5b87c/?child=first",
+    "JavaObjekte": "https://courses.edx.org/courses/course-v1:TUMx+LOOPx+3T2018/courseware/1ca8227765a04a0aa80a4ec20c0a5f01/c4ef98ad15764603baaf525325db53f0/?child=first",
+    "Implementierung": "https://courses.edx.org/courses/course-v1:TUMx+LOOPx+3T2018/courseware/2db486aaa7534ab68995f375695c60da/9cb21f463d55443fb21d6bdd4baf1ebf/2?activate_block_id=block-v1%3ATUMx%2BLOOPx%2B3T2018%2Btype%40vertical%2Bblock%405a3d9aeb84464f99aa36af2a75b98e53",
+    "Aggregation": "https://courses.edx.org/courses/course-v1:TUMx+LOOPx+3T2018/courseware/b690a31885e64957bfb3c9bfedaa89e9/13ecd26b607949bab8ff2d1e06002b2c/?child=first",
+    "Assoziationen": "https://courses.edx.org/courses/course-v1:TUMx+LOOPx+3T2018/courseware/b690a31885e64957bfb3c9bfedaa89e9/23baa88cde3f41348665dcfb1b02b5bd/2?activate_block_id=block-v1%3ATUMx%2BLOOPx%2B3T2018%2Btype%40vertical%2Bblock%4045526eebac37484b900608691da55af8",
+    "": "" 
 }

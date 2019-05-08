@@ -38,7 +38,7 @@
         {
             "id": "c1_2",
             "type": "mc",
-            "mkdTitel": "**1.2 Objekte**",
+            "mkdTitel": "**1.1 Objekte**",
             "mkdTexts": [
                 { "texts": "Was beschreiben die Attribut-Werte eines Objektes?"}
             ],
@@ -46,7 +46,7 @@
                 {
                     "id": 1,
                     "texts": [
-                        { "answerOption" : "Die Eigenschaften eines Objektes."}
+                        { "answerOption" : "Die Eigenschaften eines Objektes"}
                     ],
                     "right": true
                 },
@@ -114,715 +114,1387 @@
                 { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
             ],
             "keyword": "Objekte"
-        }
-    ],
-    "chapter2": [
-        {
-            "id": "c1_1",
-            "type": "mc",
-            "mkdTitel": "**2.1 Objekte**",
-            "mkdTexts": [
-                { "texts": "Welche Aussage zu Objekten trifft zu?"}
-            ],
-            "mkdQuestions": [
-                {
-                    "id": 1,
-                    "texts": [
-                        { "answerOption" : "Objekte brauchen keinen eindeutigen Bezeichner"}
-                    ],
-                    "right": false
-                },
-                {
-                    "id": 2,
-                    "texts": [
-                        { "answerOption" : "Objekte besitzen mindestens 2 Attribute"}
-                    ],
-                    "right": false
-                },
-                {
-                    "id": 3,
-                    "texts": [
-                        { "answerOption" : "Die Eigenschaften eines Objektes werden über Attribut-Werte bestimmt"}
-                    ],
-                    "right": true
-                }
-            ],
-            "mkdAnswers": [
-                { "texts": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen." }
-            ]
-        },
-        {
-            "id": "c1_3",
-            "type": "mc",
-            "mkdTitel": "**1.1 Objekte**",
-            "mkdTexts": [
-                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
-                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
-                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
-            ],
-            "mkdQuestions": [
-                {
-                    "id": 1,
-                    "texts": [
-                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
-                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
-                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
-                    ],
-                    "right": false
-                },
-                {
-                    "id": 2,
-                    "texts": [
-                        { "answerOption" : "`schrank1.hoehe = 200`"},
-                        { "answerOption" : "`bett1.breite = 90`"},
-                        { "answerOption" : "`stuhl1.farbe = Rot`"}
-                    ],
-                    "right": true
-                },
-                {
-                    "id": 3,
-                    "texts": [
-                        { "answerOption" : "`schrank1_hoehe = 200`"},
-                        { "answerOption" : "`bett1_breite = 90`"},
-                        { "answerOption" : "`stuhl1_farbe = Rot`"}
-                    ],
-                    "right": false
-                }
-            ],
-            "mkdAnswers": [
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
-            ]
-        },
-        {
-            "id": "c1_3",
-            "type": "mc",
-            "mkdTitel": "**1.1 Objekte**",
-            "mkdTexts": [
-                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
-                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
-                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
-            ],
-            "mkdQuestions": [
-                {
-                    "id": 1,
-                    "texts": [
-                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
-                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
-                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
-                    ],
-                    "right": false
-                },
-                {
-                    "id": 2,
-                    "texts": [
-                        { "answerOption" : "`schrank1.hoehe = 200`"},
-                        { "answerOption" : "`bett1.breite = 90`"},
-                        { "answerOption" : "`stuhl1.farbe = Rot`"}
-                    ],
-                    "right": true
-                },
-                {
-                    "id": 3,
-                    "texts": [
-                        { "answerOption" : "`schrank1_hoehe = 200`"},
-                        { "answerOption" : "`bett1_breite = 90`"},
-                        { "answerOption" : "`stuhl1_farbe = Rot`"}
-                    ],
-                    "right": false
-                }
-            ],
-            "mkdAnswers": [
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
-            ]
-        },
-        {
-            "id": "c1_3",
-            "type": "mc",
-            "mkdTitel": "**1.1 Objekte**",
-            "mkdTexts": [
-                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
-                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
-                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
-            ],
-            "mkdQuestions": [
-                {
-                    "id": 1,
-                    "texts": [
-                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
-                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
-                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
-                    ],
-                    "right": false
-                },
-                {
-                    "id": 2,
-                    "texts": [
-                        { "answerOption" : "`schrank1.hoehe = 200`"},
-                        { "answerOption" : "`bett1.breite = 90`"},
-                        { "answerOption" : "`stuhl1.farbe = Rot`"}
-                    ],
-                    "right": true
-                },
-                {
-                    "id": 3,
-                    "texts": [
-                        { "answerOption" : "`schrank1_hoehe = 200`"},
-                        { "answerOption" : "`bett1_breite = 90`"},
-                        { "answerOption" : "`stuhl1_farbe = Rot`"}
-                    ],
-                    "right": false
-                }
-            ],
-            "mkdAnswers": [
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
-            ]
-        },
-        {
-            "id": "c1_3",
-            "type": "mc",
-            "mkdTitel": "**1.1 Objekte**",
-            "mkdTexts": [
-                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
-                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
-                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
-            ],
-            "mkdQuestions": [
-                {
-                    "id": 1,
-                    "texts": [
-                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
-                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
-                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
-                    ],
-                    "right": false
-                },
-                {
-                    "id": 2,
-                    "texts": [
-                        { "answerOption" : "`schrank1.hoehe = 200`"},
-                        { "answerOption" : "`bett1.breite = 90`"},
-                        { "answerOption" : "`stuhl1.farbe = Rot`"}
-                    ],
-                    "right": true
-                },
-                {
-                    "id": 3,
-                    "texts": [
-                        { "answerOption" : "`schrank1_hoehe = 200`"},
-                        { "answerOption" : "`bett1_breite = 90`"},
-                        { "answerOption" : "`stuhl1_farbe = Rot`"}
-                    ],
-                    "right": false
-                }
-            ],
-            "mkdAnswers": [
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
-            ]
-        },
-        {
-            "id": "c1_3",
-            "type": "mc",
-            "mkdTitel": "**1.1 Objekte**",
-            "mkdTexts": [
-                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
-                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
-                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
-            ],
-            "mkdQuestions": [
-                {
-                    "id": 1,
-                    "texts": [
-                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
-                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
-                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
-                    ],
-                    "right": false
-                },
-                {
-                    "id": 2,
-                    "texts": [
-                        { "answerOption" : "`schrank1.hoehe = 200`"},
-                        { "answerOption" : "`bett1.breite = 90`"},
-                        { "answerOption" : "`stuhl1.farbe = Rot`"}
-                    ],
-                    "right": true
-                },
-                {
-                    "id": 3,
-                    "texts": [
-                        { "answerOption" : "`schrank1_hoehe = 200`"},
-                        { "answerOption" : "`bett1_breite = 90`"},
-                        { "answerOption" : "`stuhl1_farbe = Rot`"}
-                    ],
-                    "right": false
-                }
-            ],
-            "mkdAnswers": [
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
-            ]
-        },
-        {
-            "id": "c1_3",
-            "type": "mc",
-            "mkdTitel": "**1.1 Objekte**",
-            "mkdTexts": [
-                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
-                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
-                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
-            ],
-            "mkdQuestions": [
-                {
-                    "id": 1,
-                    "texts": [
-                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
-                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
-                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
-                    ],
-                    "right": false
-                },
-                {
-                    "id": 2,
-                    "texts": [
-                        { "answerOption" : "`schrank1.hoehe = 200`"},
-                        { "answerOption" : "`bett1.breite = 90`"},
-                        { "answerOption" : "`stuhl1.farbe = Rot`"}
-                    ],
-                    "right": true
-                },
-                {
-                    "id": 3,
-                    "texts": [
-                        { "answerOption" : "`schrank1_hoehe = 200`"},
-                        { "answerOption" : "`bett1_breite = 90`"},
-                        { "answerOption" : "`stuhl1_farbe = Rot`"}
-                    ],
-                    "right": false
-                }
-            ],
-            "mkdAnswers": [
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
-            ]
-        },
-        {
-            "id": "c1_3",
-            "type": "mc",
-            "mkdTitel": "**1.1 Objekte**",
-            "mkdTexts": [
-                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
-                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
-                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
-            ],
-            "mkdQuestions": [
-                {
-                    "id": 1,
-                    "texts": [
-                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
-                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
-                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
-                    ],
-                    "right": false
-                },
-                {
-                    "id": 2,
-                    "texts": [
-                        { "answerOption" : "`schrank1.hoehe = 200`"},
-                        { "answerOption" : "`bett1.breite = 90`"},
-                        { "answerOption" : "`stuhl1.farbe = Rot`"}
-                    ],
-                    "right": true
-                },
-                {
-                    "id": 3,
-                    "texts": [
-                        { "answerOption" : "`schrank1_hoehe = 200`"},
-                        { "answerOption" : "`bett1_breite = 90`"},
-                        { "answerOption" : "`stuhl1_farbe = Rot`"}
-                    ],
-                    "right": false
-                }
-            ],
-            "mkdAnswers": [
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
-            ]
-        },
-        {
-            "id": "c1_3",
-            "type": "mc",
-            "mkdTitel": "**1.1 Objekte**",
-            "mkdTexts": [
-                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
-                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
-                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
-            ],
-            "mkdQuestions": [
-                {
-                    "id": 1,
-                    "texts": [
-                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
-                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
-                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
-                    ],
-                    "right": false
-                },
-                {
-                    "id": 2,
-                    "texts": [
-                        { "answerOption" : "`schrank1.hoehe = 200`"},
-                        { "answerOption" : "`bett1.breite = 90`"},
-                        { "answerOption" : "`stuhl1.farbe = Rot`"}
-                    ],
-                    "right": true
-                },
-                {
-                    "id": 3,
-                    "texts": [
-                        { "answerOption" : "`schrank1_hoehe = 200`"},
-                        { "answerOption" : "`bett1_breite = 90`"},
-                        { "answerOption" : "`stuhl1_farbe = Rot`"}
-                    ],
-                    "right": false
-                }
-            ],
-            "mkdAnswers": [
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
-            ]
-        },
-        {
-            "id": "c1_3",
-            "type": "mc",
-            "mkdTitel": "**1.1 Objekte**",
-            "mkdTexts": [
-                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
-                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
-                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
-            ],
-            "mkdQuestions": [
-                {
-                    "id": 1,
-                    "texts": [
-                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
-                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
-                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
-                    ],
-                    "right": false
-                },
-                {
-                    "id": 2,
-                    "texts": [
-                        { "answerOption" : "`schrank1.hoehe = 200`"},
-                        { "answerOption" : "`bett1.breite = 90`"},
-                        { "answerOption" : "`stuhl1.farbe = Rot`"}
-                    ],
-                    "right": true
-                },
-                {
-                    "id": 3,
-                    "texts": [
-                        { "answerOption" : "`schrank1_hoehe = 200`"},
-                        { "answerOption" : "`bett1_breite = 90`"},
-                        { "answerOption" : "`stuhl1_farbe = Rot`"}
-                    ],
-                    "right": false
-                }
-            ],
-            "mkdAnswers": [
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
-            ]
-        },
-        {
-            "id": "c1_3",
-            "type": "mc",
-            "mkdTitel": "**1.1 Objekte**",
-            "mkdTexts": [
-                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
-                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
-                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
-            ],
-            "mkdQuestions": [
-                {
-                    "id": 1,
-                    "texts": [
-                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
-                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
-                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
-                    ],
-                    "right": false
-                },
-                {
-                    "id": 2,
-                    "texts": [
-                        { "answerOption" : "`schrank1.hoehe = 200`"},
-                        { "answerOption" : "`bett1.breite = 90`"},
-                        { "answerOption" : "`stuhl1.farbe = Rot`"}
-                    ],
-                    "right": true
-                },
-                {
-                    "id": 3,
-                    "texts": [
-                        { "answerOption" : "`schrank1_hoehe = 200`"},
-                        { "answerOption" : "`bett1_breite = 90`"},
-                        { "answerOption" : "`stuhl1_farbe = Rot`"}
-                    ],
-                    "right": false
-                }
-            ],
-            "mkdAnswers": [
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
-            ]
-        },
-        {
-            "id": "c1_3",
-            "type": "mc",
-            "mkdTitel": "**2.1 Objekte**",
-            "mkdTexts": [
-                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
-                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
-                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
-            ],
-            "mkdQuestions": [
-                {
-                    "id": 1,
-                    "texts": [
-                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
-                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
-                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
-                    ],
-                    "right": false
-                },
-                {
-                    "id": 2,
-                    "texts": [
-                        { "answerOption" : "`schrank1.hoehe = 200`"},
-                        { "answerOption" : "`bett1.breite = 90`"},
-                        { "answerOption" : "`stuhl1.farbe = Rot`"}
-                    ],
-                    "right": true
-                },
-                {
-                    "id": 3,
-                    "texts": [
-                        { "answerOption" : "`schrank1_hoehe = 200`"},
-                        { "answerOption" : "`bett1_breite = 90`"},
-                        { "answerOption" : "`stuhl1_farbe = Rot`"}
-                    ],
-                    "right": false
-                }
-            ],
-            "mkdAnswers": [
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
-                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
-            ]
-        }
-    ],
-    "chapter3": [],
-    "chapter4": [],
-    "chapter5": [],
-    "questions": [
-        {
-            "id": "",
-            "type": "",
-            "mkdTitel": "",
-            "mkdText": "",
-            "mkdQuestions": [
-                {
-                    "id": 1,
-                    "texts": [
-                        { "answerOptions": "" }
-                    ],
-                    "right": false
-                }
-            ],
-            "mkdAnswer": ""
-        },
-        {
-            "id": "c1_1",
-            "type": "mc",
-            "mkdTitel": "**1.1 Objekte**",
-            "mkdText":  "Welche Aussage zu Objekten trifft zu?\n\n**(1)** Objekte brauchen keinen eindeutigen Bezeichner\n\n**(2)** Objekte besitzen mindestens 2 Attribute\n\n**(3)** Die Eigenschaften eines Objektes werden über Attribut-Werte bestimmt",
-            "mkdAnwser": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen. \n( richtig ist **Anwort 3** )",
-            "titel": "1.1 Objekte\nWelche Aussage zu Objekten trifft zu?",
-            "text": "(1) Objekte brauchen keinen eindeutigen Bezeichner \n(2) Objekte besitzen mindestens 2 Attribute \n(3) Die Eigenschaften eines Objektes werden über Attribut-Werte bestimmt",
-            "anser": "Viele elektronische Dokumente bestehen aus einzelnen Objekten. Jedes Objekt benötigt zur genauen Identifizierung einen eindeutigen Bezeichner. \n( richtig ist Anwort 3 )",
-            "answerCount": 3,
-            "rightAnswerNr": 3
-        },
-        {
-            "id": "c1_2",
-            "type": "mc",
-            "mkdTitel": "**1.2 Objekte**",
-            "mkdText":  "Was beschreiben die Attribut-Werte eines Objektes?\n\n**(1)** Die Eigenschaften eines Objektes. \n\n**(2)** Den Speicherort eines Objektes. \n\n**(3)** Die Häufigkeit des Vorkommens eines Objektes.",
-            "mkdAnwser": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen. \n( richtig ist **Anwort 1** )",
-            "titel": "1.2 Objekte\nWas beschreiben die Attribut-Werte eines Objektes?",
-            "text": "(1) Die Eigenschaften eines Objektes. \n(2) Den Speicherort eines Objektes. \n(3) Die Häufigkeit des Vorkommens eines Objektes.",
-            "anser": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen. \n( richtig ist Anwort 1 )",
-            "answerCount": 3,
-            "rightAnswerNr": 1
-        },
-        {
-            "id": "c1_3",
-            "type": "mc",
-            "mkdTitel": "**1.1 Objekte**",
-            "mkdText":  "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?\n\n**(1)** `schrank1: Rechteck = Hoehe 200`\n\n**(2)** `schrank1.hoehe = 200`\n\n**(3)** `schrank1_hoehe = 200`",
-            "mkdAnwser": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`. \n(richtig ist **Antwort 2**)",
-            "titel": "",
-            "text": "",
-            "anser": "",
-            "answerCount": 3,
-            "rightAnswerNr": 2
         },
         {
             "id": "c1_4",
             "type": "mc",
             "mkdTitel": "**1.2 Klassen**",
-            "mkdText":  "Was ist eine Klasse?\n\n**(1)** Ein Konstruktionsplan für bestimmte Objekte.\n\n**(2)** Eine Menge von Objekten.\n\n**(3)** Zusammenfassung einer Gruppe von Attributwerten.",
-            "mkdAnwser": "Eine Klasse stellt einen Konstruktionsplan für bestimmte Objekte dar, der mit all seinen Informationen auch ohne diese Objekte existiert. \nEine Klasse ist also keine Menge von Objekten!\n(richtig ist **Antwort 1**)",
-            "titel": "",
-            "text": "",
-            "anser": "",
-            "answerCount": 3,
-            "rightAnswerNr": 1
+            "mkdTexts": [
+                { "texts": "Was ist eine Klasse?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Ein Konstruktionsplan für bestimmte Objekte"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Eine Menge von Objekten"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Zusammenfassung einer Gruppe von Attributwerten"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Eine Klasse stellt einen Konstruktionsplan für bestimmte Objekte dar, der mit all seinen Informationen auch ohne diese Objekte existiert. \nEine Klasse ist also keine Menge von Objekten!" }
+            ],
+            "keyword": "Klassen"
         },
         {
             "id": "c1_5",
             "type": "mc",
             "mkdTitel": "**1.2 Klassen**",
-            "mkdText":  "Welche Aussage über Klassen stimmt?\n\n**(1)** Objekte derselben Klasse besitzen die gleichen Attributwerte.\n\n**(2)** Alle Klassen besitzen die gleichen Attribute.\n\n**(3)** Objekte derselben Klasse besitzen die gleichen Attribute.\n\n**(4)** Eine Klasse ist eine Menge von Objekten.",
-            "mkdAnwser": "Objekte werden nach der Menge ihrer Attribute in Klassen eingeteilt, das heißt: Objekte der gleichen Klasse haben dieselben Attribute (aber nicht notwenigerweise dieselben Attributwerte!). \nEine Klasse ist also keine Menge von Objekten!\n(richtig ist **Antwort 3**)",
-            "titel": "",
-            "text": "",
-            "anser": "",
-            "answerCount": 4,
-            "rightAnswerNr": 3
+            "mkdTexts": [
+                { "texts": "Welche Aussage über Klassen stimmt?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Objekte derselben Klasse besitzen die gleichen Attributwerte"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Alle Klassen besitzen die gleichen Attribute"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Objekte derselben Klasse besitzen die gleichen Attribute"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Eine Klasse ist eine Menge von Objekten"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Objekte werden nach der Menge ihrer Attribute in Klassen eingeteilt, das heißt: Objekte der gleichen Klasse haben dieselben Attribute (aber nicht notwenigerweise dieselben Attributwerte!). \nEine Klasse ist also keine Menge von Objekten!" }
+            ],
+            "keyword": "Klassen"
         },
         {
             "id": "c1_6",
             "type": "mc",
             "mkdTitel": "**1.2 Klassen**",
-            "mkdText":  "Welches Element enthält diese Objektkarte **nicht**?\n\n![Objektkarte](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/2a6e738c221c964bd1d6afd119916210/asset-v1:TUMx+LOOPx+3T2018+type@asset+block/LOOP_2016_1-1-10_exercise_01.png)\n\n**(1)** Objektname.\n\n**(2)** Attributbezeichner\n\n**(3)** Attributwerte\n\n**(4)** Klassenname\n\n**(5)** Methoden",
-            "mkdAnwser": "Objekte setzen sich aus Attributen und Methoden zusammen, wobei jedes Attribut zu einem bestimmten Zeitpunkt einen bestimmten Wert hat. Die Objektkarte stellt dies übersichtlich dar. Sie enthält neben den Attributen und Attributwerten auch den Objektnamen und Namen der zugehörigen Klasse.\nÄhnlich wie Objekte stellt man Klassen oft als Klassenkarten dar. Sie unterscheiden sich von den Objektkarten durch das Fehlen der Attributwerte. Methoden sind im Konstruktionsplan der Klasse definiert und werden daher in der Klassenkarte aufgelistet, auch wenn sie über Objekte aufgerufen werden. In den Objektkarten kann man die Methoden auch weglassen.\n(richtig ist **Antwort 5**)",
-            "titel": "",
-            "text": "",
-            "anser": "",
-            "answerCount": 5,
-            "rightAnswerNr": 5
+            "mkdTexts": [
+                { "texts": " Welches Element enthält diese Objektkarte **nicht**?\n\n![Objektkarte](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/2a6e738c221c964bd1d6afd119916210/asset-v1:TUMx+LOOPx+3T2018+type@asset+block/LOOP_2016_1-1-10_exercise_01.png)"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Objektname"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Attributbezeichner"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Attributwerte"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Klassenname"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 5,
+                    "texts": [
+                        { "answerOption" : "Methoden"}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Objekte setzen sich aus Attributen und Methoden zusammen, wobei jedes Attribut zu einem bestimmten Zeitpunkt einen bestimmten Wert hat. Die Objektkarte stellt dies übersichtlich dar. Sie enthält neben den Attributen und Attributwerten auch den Objektnamen und Namen der zugehörigen Klasse.\nÄhnlich wie Objekte stellt man Klassen oft als Klassenkarten dar. Sie unterscheiden sich von den Objektkarten durch das Fehlen der Attributwerte. Methoden sind im Konstruktionsplan der Klasse definiert und werden daher in der Klassenkarte aufgelistet, auch wenn sie über Objekte aufgerufen werden. In den Objektkarten kann man die Methoden auch weglassen." }
+            ],
+            "keyword": "Klassen"
         },
         {
             "id": "c1_7",
             "type": "mc",
             "mkdTitel": "**1.2 Klassen**",
-            "mkdText":  "Welche Aussage über Objekt- und Klassenkarten ist richtig?\n\n**(1)** Nur die Klassenkarte enthält Attributwerte.\n\n**(2)** Die Objektkarte stellt den allgemeinen Zustand einer Klasse dar.\n\n**(3)** In der Objektkarte werden die Attribute **ohne** ihre Werte notiert.\n\n**(4)** Eine Klassenkarte zeigt alle grundlegenden Informationen zu einer Klasse.",
-            "mkdAnwser": "Objekte setzen sich aus Attributen und Methoden zusammen, wobei jedes Attribut zu einem bestimmten Zeitpunkt einen bestimmten Wert hat. Die Objektkarte stellt dies übersichtlich dar. Sie enthält neben den Attributen und Attributwerten auch den Objektnamen und Namen der zugehörigen Klasse.\nÄhnlich wie Objekte stellt man Klassen oft als Klassenkarten dar. Sie unterscheiden sich von den Objektkarten durch das Fehlen der Attributwerte. Methoden sind im Konstruktionsplan der Klasse definiert und werden daher in der Klassenkarte aufgelistet, auch wenn sie über Objekte aufgerufen werden. In den Objektkarten kann man die Methoden auch weglassen.\n(richtig ist **Antwort 4**)",
-            "titel": "",
-            "text": "",
-            "anser": "",
-            "answerCount": 4,
-            "rightAnswerNr": 4
+            "mkdTexts": [
+                { "texts": " Welches Element enthält diese Objektkarte **nicht**?\n\n![Objektkarte](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/2a6e738c221c964bd1d6afd119916210/asset-v1:TUMx+LOOPx+3T2018+type@asset+block/LOOP_2016_1-1-10_exercise_01.png)"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Objektname"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Attributbezeichner"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Attributwerte"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Klassenname"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 5,
+                    "texts": [
+                        { "answerOption" : "Methoden"}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Objekte setzen sich aus Attributen und Methoden zusammen, wobei jedes Attribut zu einem bestimmten Zeitpunkt einen bestimmten Wert hat. Die Objektkarte stellt dies übersichtlich dar. Sie enthält neben den Attributen und Attributwerten auch den Objektnamen und Namen der zugehörigen Klasse.\nÄhnlich wie Objekte stellt man Klassen oft als Klassenkarten dar. Sie unterscheiden sich von den Objektkarten durch das Fehlen der Attributwerte. Methoden sind im Konstruktionsplan der Klasse definiert und werden daher in der Klassenkarte aufgelistet, auch wenn sie über Objekte aufgerufen werden. In den Objektkarten kann man die Methoden auch weglassen." }
+            ],
+            "keyword": "Klassen"
         },
         {
-            "id": "c1_8",
+            "id": "c1_7",
             "type": "mc",
-            "mkdTitel": "**1.3 Methoden und Parameter**",
-            "mkdText":  "Was ist eine Methode?\n\n**(1)** Eine Operation, die von einem Objekt ausgeführt werden kann.\n\n**(2)** Ein Attribut eines Objektes.\n\n**(3)** Ein Argument einer Operation.\n\n**(4)** Ein Argument einer Klasse.",
-            "mkdAnwser": "Objekte können auf Befehl gewisse Operationen (auch Methoden genannt) ausführen.\n(richtig ist **Antwort 1**)",
-            "titel": "",
-            "text": "",
-            "anser": "",
-            "answerCount": 4,
-            "rightAnswerNr": 1
+            "mkdTitel": "**1.2 Klassen**",
+            "mkdTexts": [
+                { "texts": " Welche Aussage über Objekt- und Klassenkarten ist richtig?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Nur die Klassenkarte enthält Attributwerte"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Die Objektkarte stellt den allgemeinen Zustand einer Klasse dar"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "In der Objektkarte werden die Attribute **ohne** ihre Werte notiert"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Eine Klassenkarte zeigt alle grundlegenden Informationen zu einer Klasse"}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Objekte setzen sich aus Attributen und Methoden zusammen, wobei jedes Attribut zu einem bestimmten Zeitpunkt einen bestimmten Wert hat. Die Objektkarte stellt dies übersichtlich dar. Sie enthält neben den Attributen und Attributwerten auch den Objektnamen und Namen der zugehörigen Klasse.\nÄhnlich wie Objekte stellt man Klassen oft als Klassenkarten dar. Sie unterscheiden sich von den Objektkarten durch das Fehlen der Attributwerte. Methoden sind im Konstruktionsplan der Klasse definiert und werden daher in der Klassenkarte aufgelistet, auch wenn sie über Objekte aufgerufen werden. In den Objektkarten kann man die Methoden auch weglassen." }
+            ],
+            "keyword": "Klassen"
+        }
+    ],
+    "chapter2": [
+        {
+            "id": "c2_1",
+            "type": "mc",
+            "mkdTitel": "**2.1 Algorithmus**",
+            "mkdTexts": [
+                { "texts": "Welche Aussage muss gelten, damit ein Verfahren ein Algorithmus ist?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Eine endliche Beschreibung, eine genau festgelegte Sprache und die Ausführungsdauer muss unendlich sein"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Ein korrektes Ergebnis, formale Spezifikationen müssen erfüllt sein und es müssen eindeutige Verarbeitungsschritte vorhanden sein"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Eine endliche Beschreibung, in einer genau festgelegte Sprache, unter Verwendung ausführbarer und eindeutiger Verarbeitungs-/Arbeitschritte"}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Ein Algorithmus ist ein Verfahren, das durch eine endliche Beschreibung in einer präzisen (d.h. genau festgelegten) Sprache unter Verwendung effektiver (d.h. tatsächlich ausführbarer) und elementarer (Verarbeitungs-) Schritte festgelegt wird." }
+            ],
+            "keyword": "Algorithmen"
         },
         {
-            "id": "c1_9",
+            "id": "c2_2",
             "type": "mc",
-            "mkdTitel": "**1.3 Methoden und Parameter**",
-            "mkdText":  "Was ist ein Parameter?\n\n**(1)** Ein Übergabewert an ein Objekt.\n\n**(2)** Ein Argument einer Methode.\n\n**(3)** Ein Attributwert einer Methode.\n\n**(4)** Eine Methode eines Objektes.",
-            "mkdAnwser": "Bei vielen Methoden muss man durch ein oder mehrere Argumente (Parameter) festlegen, mit welchen Eingaben sie ausgeführt werden sollen.\n(richtig ist **Antwort 2**)",
-            "titel": "",
-            "text": "",
-            "anser": "",
-            "answerCount": 4,
-            "rightAnswerNr": 2
+            "mkdTitel": "**2.1 Algorithmus**",
+            "mkdTexts": [
+                { "texts": "Falls ein Programm P einen Algorithmus A beschreibt, dann ist:"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "P eine Abstraktion von A und A eine Konkretisierung von P"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "P eine Konkretisierung von A und A eine Konkretisierung von P"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "P eine Konkretisierung von A und A eine Abstraktion von P"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "P eine Abstraktion von A und A eine Abstraktion von P"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Ein Algorithmus ist ein Verfahren, das durch eine endliche Beschreibung in einer präzisen (d.h. genau festgelegten) Sprache unter Verwendung effektiver (d.h. tatsächlich ausführbarer) und elementarer (Verarbeitungs-) Schritte festgelegt wird." }
+            ],
+            "keyword": "Algorithmen"
         },
         {
-            "id": "c1_10",
+            "id": "c2_3",
             "type": "mc",
-            "mkdTitel": "**1.3 Methoden und Parameter**",
-            "mkdText":  "Wählen Sie die geeignete Methoden aus, durch die Sie Bild1 zu Bild2 transformieren?\n\nBild1:\n![Bild1](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/ba30c854a397aec4cc66f0724747daa7/asset-v1:TUMx+LOOPx+3T2018+type@asset+block/LOOP_2016_1-2-4_1_Bild_03_klein.png)\n\nBild2:\n![Bild2](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/b78e13733ff2d8e731434b5556d86c79/asset-v1:TUMx+LOOPx+3T2018+type@asset+block/LOOP_2016_1-2-4_1_Bild_04_klein.png)\n\n**(1)**\n`kreis1.verschieben(1,2)\ndreieck1.skalieren(2)\ndreieck1.füllen(grün)`.\n\n**(2)**\n `kreis1.skalieren(2)\ndreieck1.verschieben(0, -3)\ndreieck1.füllen(grün)`.\n\n**(3)**\n `kreis1.skalieren(2)\nkreis1.setzeLinienfarbe(blau)\ndreieck1.füllen(grün)` \n\n**(4)**\n `kreis1.füllen(lila)\nkreis1.skalieren(2)\ndreieck1.füllen(gelb)`",
-            "mkdAnwser": "Erst vergrößern wir den Kreis um 2 Blöcke mit `kreis1.skalieren(2)`. Dann verschieben wir das Dreieck ins untere Eck mit `dreieck1.verschieben(0, -3)`. Abschließend färben wir das Dreieck mit `dreieck1.füllen(grün)`. So gelangen wir von Bild1 zu Bild2.\n(richtig ist **Antwort 2**)",
-            "titel": "",
-            "text": "",
-            "anser": "",
-            "answerCount": 4,
-            "rightAnswerNr": 2
+            "mkdTitel": "**2.1 Algorithmus**",
+            "mkdTexts": [
+                { "texts": "Im Folgenden sind mehrere Beispiele für Kandidaten von Algorithmen angegeben. Wählen Sie die Elemente aus, bei denen es sich um einen Algorithmus gemäß der Ihnen bekannten Definition handelt."}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Das Spiel \"Schere, Stein, Papier\""}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Kochrezept Kakao: Einen Löffel Kako in eine Tasse Milch geben. Es kann jedoch nach Belieben mehr oder weniger genommen werden, ohne dass der Geschmack des Kakaos beeinträchtigt wird."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Sie sollen am nächsten Montag um 13:00 Uhr das fiktive Buch \"Mit X und Y durch die Informatik\" bei der Buchhandlung am Sternberg abholen."}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Ein Algorithmus ist ein Verfahren, das durch eine endliche Beschreibung in einer präzisen (d.h. genau festgelegten) Sprache unter Verwendung effektiver (d.h. tatsächlich ausführbarer) und elementarer (Verarbeitungs-) Schritte festgelegt wird." }
+            ],
+            "keyword": "Algorithmen"
         },
         {
-            "id": "c1_11",
+            "id": "c2_4",
             "type": "mc",
-            "mkdTitel": "**1.4 Beziehungen**",
-            "mkdText":  "Welche Aussage zu Objektdiagrammen stimmt?\n\n**(1)** Objektdiagramme sind Strukturdiagramme. \n\n**(2)** Zeigen den allgemeinen Zustand eines Systems.\n\n**(3)** Stellen Klassen, Schnittstellen und deren Beziehungen grafisch dar.",
-            "mkdAnwser": "Objektdiagramme sind Strukturdiagramme, die eine bestimmte Sicht auf die Struktur des modellierten Systems darstellen. Sie umfassen die Ausprägungsspezifikationen von Klassen und Assoziationen. Objektdiagramme zeigen stets den aktuellen Zustand, das heißt die aktuelle Belegung der Attribute.\n(richtig ist **Antwort 1**)",
-            "titel": "",
-            "text": "",
-            "anser": "",
-            "answerCount": 3,
-            "rightAnswerNr": 1
+            "mkdTitel": "**2.2 Strukturelemente von Algorithmen**",
+            "mkdTexts": [
+                { "texts": "Welche Aussagen ist korrekt?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Um eine Anweisung (oder eine Sequenz von Anweisungen) mehrmals auszuführen, verwendet man das Strukturelement \"Wiederholung\"."}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Jeder Algorithmus kann als eine Sequenz von elementaren Verarbeitungsschritten beschrieben werden."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Die Reihenfolge der Anweisungen in einem Algorithmus spielt keine Rolle."}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Ein Algorithmus ist ein Verfahren, das durch eine endliche Beschreibung in einer präzisen (d.h. genau festgelegten) Sprache unter Verwendung effektiver (d.h. tatsächlich ausführbarer) und elementarer (Verarbeitungs-) Schritte festgelegt wird." }
+            ],
+            "keyword": "Algorithmen"
+        }
+    ],
+    "chapter3": [
+        {
+            "id": "c3_1",
+            "type": "mc",
+            "mkdTitel": "**3.1 Klassen in Java**",
+            "mkdTexts": [
+                { "texts": "Welche Aussagen ist korrekt?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Computer-Programme in Java werden in Binär-Code von Entwicklern geschrieben."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Computer-Programme in Java bestehen nur aus Text (speziell strukturiertem Text)."}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Computer-Programme in Java werden ohne Struktur von Entwicklern geschrieben, um Speicherplatz zu sparen."}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Java-Programme werden einfach in normalen Text-Dateien gespeichert und sind nichts weiter als speziell strukturierter Text. Der gesamte Quelltext steht dabei innerhalb von einer oder mehreren Klassendefinitionen." }
+            ],
+            "keyword": "JavaKlasse"
         },
         {
-            "id": "c1_12",
+            "id": "c3_2",
             "type": "mc",
-            "mkdTitel": "**1.4 Beziehungen**",
-            "mkdText":  "Welche Aussage zu Objektdiagrammen stimmt?\n\n**(1)** Umfassen Ausprägungsspezifikationen von Klassen und Assoziationen.\n\n**(2)** Objektdiagramme sind keine Strukturdiagramme.\n\n**(3)** Stellen Klassen, Schnittstellen und deren Beziehungen grafisch dar.",
-            "mkdAnwser": "Objektdiagramme sind Strukturdiagramme, die eine bestimmte Sicht auf die Struktur des modellierten Systems darstellen. Sie umfassen die Ausprägungsspezifikationen von Klassen und Assoziationen. Objektdiagramme zeigen stets den aktuellen Zustand, das heißt die aktuelle Belegung der Attribute.\n(richtig ist **Antwort 1**)",
-            "titel": "",
-            "text": "",
-            "anser": "",
-            "answerCount": 3,
-            "rightAnswerNr": 1
+            "mkdTitel": "**3.1 Klassen in Java**",
+            "mkdTexts": [
+                { "texts": "Welche Aussagen ist korrekt?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Der gesamte Programm-Quelltext wird **nur** durch Methoden definiert."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Der gesamte Programm-Quelltext steht innerhalb von Klassendefinitionen, also innerhalb von class { ... }."}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Klassen-Definitionen werden nur in Ausnahmefällen genutzt, um den gesamten Programm-Quelltext zu definieren."}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Java-Programme werden einfach in normalen Text-Dateien gespeichert und sind nichts weiter als speziell strukturierter Text. Der gesamte Quelltext steht dabei innerhalb von einer oder mehreren Klassendefinitionen." }
+            ],
+            "keyword": "JavaKlasse"
         },
         {
-            "id": "c1_13",
+            "id": "c3_2",
             "type": "mc",
-            "mkdTitel": "**1.4 Beziehungen**",
-            "mkdText":  "Welche Aussage zu Klassendiagrammen stimmt?\n\n**(1)** Stellen eine bestimmte Sicht auf die Struktur eines Systems dar.\n\n**(2)** Zeigen den aktuellen Zustand eines Systems.\n\n**(3)** Zeigen den allgemeinen Zustand eines Systems.\n\n**(4)** Umfassen Ausprägungsspezifikationen von Klassen und Assoziationen.",
-            "mkdAnwser": "Klassendiagramme sind ebenfalls Strukturdiagramme. Sie stellen Klassen, Schnittstellen und deren Beziehungen grafisch dar.\nDie Attribute in Klassendiagrammen haben keine genauen Werte .\n(richtig ist **Antwort 3**)",
-            "titel": "",
-            "text": "",
-            "anser": "",
-            "answerCount": 4,
-            "rightAnswerNr": 3
+            "mkdTitel": "**3.1 Klassen in Java**",
+            "mkdTexts": [
+                { "texts": "Was ist der am besten passenden Datentyp, um eine Anzahl an Student zu speichern?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Boolean"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Integer (int)"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "String"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Double"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Ganze Zahlen sollten als int gespeichert werden." }
+            ],
+            "keyword": "JavaKlasse"
         },
         {
-            "id": "c1_14",
+            "id": "c3_3",
             "type": "mc",
-            "mkdTitel": "**1.4 Beziehungen**",
-            "mkdText":  "Ist das dargestellte Diagramm ein Objekt- oder Klassendiagramm?\n![Diagramm](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/da2df3f24709a3e726e7f1ba29da1057/asset-v1:TUMx+LOOPx+3T2018+type@asset+block/LOOP_2016_1-4-2_v1.png)\n\n**(1)** Objektdiagramm\n\n**(2)** Klassendiagramm",
-            "mkdAnwser": "Das dargstellte Diagramm ist ein Objektdiagramm. Dies kann man u.A. gut an den vorhandenen Attributwerten erkennen.\n(richtig ist **Antwort 1**)",
-            "titel": "",
-            "text": "",
-            "anser": "",
-            "answerCount": 2,
-            "rightAnswerNr": 1
+            "mkdTitel": "**3.1 Klassen in Java**",
+            "mkdTexts": [
+                { "texts": "Was ist der am besten passenden Datentyp, um den Titel einer Vorlesung zu speichern?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Boolean"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "String"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Integer (int)"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Double"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Alle Zeichenketten (also Texte) werden in Java als String gespeichert." }
+            ],
+            "keyword": "JavaKlasse"
+        },
+        {
+            "id": "c3_4",
+            "type": "mc",
+            "mkdTitel": "**3.1 Klassen in Java**",
+            "mkdTexts": [
+                { "texts": "Was ist der am besten passenden Datentyp, um die einmalige Anwesenheit eines Studenten in einer Vorlesung zu speichern?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "String"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Boolean"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Integer"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Double"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Wahrheitswerte werden als boolean gespeichert." }
+            ],
+            "keyword": "JavaKlasse"
+        },
+        {
+            "id": "c3_5",
+            "type": "mc",
+            "mkdTitel": "**3.1 Klassen in Java**",
+            "mkdTexts": [
+                { "texts": "Was ist der am besten passenden Datentyp, um die genaue Länge einer Spaghetti zu speichern?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "String"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Double"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Integer"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Boolean"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Zahlen mit Nachkommastellen werden üblicherweise als double gespeichert. (Hier könnte man natürlich auch die Länge in Zentimetern als int speichern.)" }
+            ],
+            "keyword": "JavaKlasse"
+        },
+        {
+            "id": "c3_6",
+            "type": "mc",
+            "mkdTitel": "**3.2 Methoden**",
+            "mkdTexts": [
+                { "texts": "Welche Aussage ist wahr?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Methoden, die mit void deklariert sind, liefern per return ein Ergebnis zurück."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Eine Methode kapselt einen Teil des Programms, so dass man diesen einfach wiederverwenden kann."}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Methoden dürfen **keinen** Parameter haben."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Wenn ein Java-Programm gestartet wird, wird als erstes die start-Methode aufgerufen."}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Instanzen einer Klasse (Objekte) können bestimmte Aktionen machen oder ausführen. Diese Aktionen nennt man in der Informatik Methoden. Methoden können mehere Parameter haben, müssen sie aber nicht." }
+            ],
+            "keyword": "JavaMethode"
+        },
+        {
+            "id": "c3_7",
+            "type": "mc",
+            "mkdTitel": "**3.2 Methoden**",
+            "mkdTexts": [
+                { "texts": "Welche Aussage ist wahr?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Methoden können **nicht** andere Methoden aufrufen."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Methoden eines Objekts können Methoden eines anderen Objektes aufrufen."}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Der Aufruf von System.out.println(\"27\" + \"6\") gibt 33 auf dem Bildschirm aus."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Methoden müssen einen Rückgabewert haben."}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Instanzen einer Klasse (Objekte) können bestimmte Aktionen machen oder ausführen. Diese Aktionen nennt man in der Informatik Methoden. Methoden können mehere Parameter haben, müssen sie aber nicht." }
+            ],
+            "keyword": "JavaMethode"
+        },
+        {
+            "id": "c3_8",
+            "type": "mc",
+            "mkdTitel": "**3.3 Erzeugen von Objekten**",
+            "mkdTexts": [
+                { "texts": "Welche Aussage ist wahr?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Objekte werden beim Kompilieren des Programms erzeugt."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Eine Konstruktormethode einer Klasse X liefert ein Objekt der Klasse X zurück."}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Ein Konstruktoraufruf ist beispielsweise: rechteck1 = Rechteck.new()"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Instanzen einer Klasse sind Objekte die durch die Klasse definiert worden sind. Objekte setzen sich aus Attributen und Methoden zusammen, wobei jedes Attribut zu einem bestimmten Zeitpunkt einen bestimmten Wert hat." }
+            ],
+            "keyword": "JavaObjekte"
+        },
+        {
+            "id": "c3_9",
+            "type": "mc",
+            "mkdTitel": "**3.3 Erzeugen von Objekten**",
+            "mkdTexts": [
+                { "texts": "Welche Aussage ist wahr?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Eine Referenz eines Objekts ist die Angabe einer Speicherzelle."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Ein Attributwert ist ein Objekt, genau dann, wenn der Datentyp eine Klasse ist."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Attributwerte, die Objekte sind, werden immer als Referenz gespeichert."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Alle Antworten sind wahr."}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Alle Antworten sind wahr." }
+            ],
+            "keyword": "JavaObjekte"
+        }
+    ],
+    "chapter4": [
+        {
+            "id": "c4_1",
+            "type": "mc",
+            "mkdTitel": "**4.1 Algorithmen implementieren**",
+            "mkdTexts": [
+                { "texts": "Welche algorithmischen Strukturelemente werden von den meisten Programmiersprachen zur Verfügung gestellt?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Sequenz"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Wiederholung"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Alternative"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Alle Antworten sind wahr."}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Alle Antworten sind wahr.\nIn der Regel stellt eine Programmiersprache Sequenzen, Alternativen und Wiederholungen zur Verfügung. Dennoch kann es Programmiersprachen geben, die auch andere Kontrollstrukturen umgesetzt haben." }
+            ],
+            "keyword": "Implementierung"
+        },
+        {
+            "id": "c4_2",
+            "type": "mc",
+            "mkdTitel": "**4.2 Felder**",
+            "mkdTexts": [
+                { "texts": "Welchen Index hat das letzte Element eines Feldes der Länge 9"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "9"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "10"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "8"}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "In Java hat das erste Element eines Feldes den Index 0. Somit hat das letzte Element eines Feldes der Länge n den Index n − 1." }
+            ],
+            "keyword": "Implementierung"
+        },
+        {
+            "id": "c4_3",
+            "type": "mc",
+            "mkdTitel": "**4.2 Felder**",
+            "mkdTexts": [
+                { "texts": "Welche der folgenden Anweisungen sind korrekt?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "int[2] a;"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "int[] a = new int[];"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "int[] a = new int[2];"}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Felder können mit new initialisiert werden und dabei muss die Feldlänge angegeben werden. Bei der Deklaration des Datentyps muss und darf keine Länge angegeben werden." }
+            ],
+            "keyword": "Implementierung"
+        }
+    ],
+    "chapter5": [
+        {
+            "id": "c5_1",
+            "type": "mc",
+            "mkdTitel": "**5.1 Aggregation und Referenzen**",
+            "mkdTexts": [
+                { "texts": "Wie wird eine Aggregation noch genannt?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Ist-Teil-Von-Beziehung"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Vererbt-Beziehung"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Enthält-Beziehung"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Erzeugt-Beziehung"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Die Aggregation wird auch \"Enthält-Beziehung\" genannt." }
+            ],
+            "keyword": "Aggregation"
+        },
+        {
+            "id": "c5_2",
+            "type": "mc",
+            "mkdTitel": "**5.1 Aggregation und Referenzen**",
+            "mkdTexts": [
+                { "texts": "Welche Aussagen zur Aggregation stimmen?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Objekte verweisen auf Objekte anderer Klassen."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Ein Objekt speichert in sich das andere Objekt."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Die Objekte existieren selbstständig ohne das andere Objekt."}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "In vielen Objekt- bzw. Klassenmodellen begegnet man Objekten, die wiederum Objekte anderer Klassen enthalten. Eine solche „Enthält-Beziehung“ (Aggregation) wird in Programmobjekten durch ein Attribut implementiert, als dessen Typ die Klasse der enthaltenen Objekte angegeben wird.\nBeim Programmieren wird eine Aggregation zwischen zwei Objekten nicht dadurch implementiert, dass ein Programmobjekt tatsächlich ein anderes enthält. Vielmehr speichert das enthaltende Objekt lediglich eine Referenz auf das enthaltene Objekt als Wert eines Attributes. Das enthaltene Objekt existiert jedoch selbstständig außerhalb des enthaltenden.\n Im Klassendiagramm wird eine Aggregation durch eine unaufgefüllte Raute dargestellt." }
+            ],
+            "keyword": "Aggregation"
+        },
+        {
+            "id": "c5_3",
+            "type": "mc",
+            "mkdTitel": "**5.1 Aggregation und Referenzen**",
+            "mkdTexts": [
+                { "texts": "Welche Aussagen zur Aggregation stimmen?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Objekte verweisen auf Objekte anderer Klassen."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Eine Aggregation wird im Klassendiagramm mit einem Pfeil dargestellt."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Objekte enthalten Objekte anderer Klassen."}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "In vielen Objekt- bzw. Klassenmodellen begegnet man Objekten, die wiederum Objekte anderer Klassen enthalten. Eine solche „Enthält-Beziehung“ (Aggregation) wird in Programmobjekten durch ein Attribut implementiert, als dessen Typ die Klasse der enthaltenen Objekte angegeben wird.\nBeim Programmieren wird eine Aggregation zwischen zwei Objekten nicht dadurch implementiert, dass ein Programmobjekt tatsächlich ein anderes enthält. Vielmehr speichert das enthaltende Objekt lediglich eine Referenz auf das enthaltene Objekt als Wert eines Attributes. Das enthaltene Objekt existiert jedoch selbstständig außerhalb des enthaltenden.\n Im Klassendiagramm wird eine Aggregation durch eine unaufgefüllte Raute dargestellt." }
+            ],
+            "keyword": "Aggregation"
+        },
+        {
+            "id": "c5_4",
+            "type": "mc",
+            "mkdTitel": "**5.2 Arbeiten mit Referenzen**",
+            "mkdTexts": [
+                { "texts": "Welche Aussagen zur Gleichartigkeit zweier Objekte stimmen?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Mit Hilfe klassenspezifischer Methoden kann man die Gleichartigkeit zweier Objekte immer genau bestimmen."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Gleichartig sind zwei Objekte dann, wenn sie völlig gleiche Eigenschaften haben."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Gleichartig sind zwei Objekte dann, wenn sie in allen ihren Attributwerten übereinstimmen."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Alle Antworten stimmen."}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Gleichartig sind zwei Objekte dann, wenn sie in allen ihren Attributwerten übereinstimmen, also völlig gleiche Eigenschaften haben (z. B. zwei gleichartige Fahrzeuge desselben Typs mit völlig gleicher Ausstattung von der Farbe bis zu den Extras).\nIn diesem Fall stellt sich jedoch die Frage, ob objektwertige Attribute dann identische Objekte als Werte haben müssen oder nur gleichartige. Im zweiten Fall kann man für deren objektwertige Attribute wiederum Identität oder nur Gleichartigkeit verlangen usw.\nWegen dieser Mehrdeutigkeiten ist die Verwendung des einfachen Gleichheitsoperators == bei Objekten mit Vorsicht zu genießen. Meist gibt es spezielle klassenspezifische Methoden zur Feststellung der Gleichartigkeit zweier Objekte." }
+            ],
+            "keyword": "Aggregation"
+        },
+        {
+            "id": "c5_5",
+            "type": "mc",
+            "mkdTitel": "**5.2 Arbeiten mit Referenzen**",
+            "mkdTexts": [
+                { "texts": "Welche Aussagen zur Gleichartigkeit zweier Objekte stimmen?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Mit Hilfe des Gleichheitsoperators == kann man die Gleichartigkeit zweier Objekte immer genau bestimmen."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Gleichartig sind zwei Objekte dann, wenn sie völlig gleiche Eigenschaften haben."}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Gleichartig sind zwei Objekte dann, wenn sie keine gleichen Eigenschaften haben."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Alle Antworten stimmen."}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Gleichartig sind zwei Objekte dann, wenn sie in allen ihren Attributwerten übereinstimmen, also völlig gleiche Eigenschaften haben (z. B. zwei gleichartige Fahrzeuge desselben Typs mit völlig gleicher Ausstattung von der Farbe bis zu den Extras).\nIn diesem Fall stellt sich jedoch die Frage, ob objektwertige Attribute dann identische Objekte als Werte haben müssen oder nur gleichartige. Im zweiten Fall kann man für deren objektwertige Attribute wiederum Identität oder nur Gleichartigkeit verlangen usw.\nWegen dieser Mehrdeutigkeiten ist die Verwendung des einfachen Gleichheitsoperators == bei Objekten mit Vorsicht zu genießen. Meist gibt es spezielle klassenspezifische Methoden zur Feststellung der Gleichartigkeit zweier Objekte." }
+            ],
+            "keyword": "Aggregation"
+        },
+        {
+            "id": "c5_6",
+            "type": "mc",
+            "mkdTitel": "**5.2 Arbeiten mit Referenzen**",
+            "mkdTexts": [
+                { "texts": "Wenn s1 und s2 zwei verschiedene Zeichenketten mit gleicher Zeichenfolge sind, welchen Wert liefern dann folgende Vergleiche zurück?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "s1 == s2 liefert true"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "s1.equals(s2) liefert true"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "s1.equals(s2) liefert false"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Mit == wird überprüft, ob zwei Referenzen auf dasselbe Objekt verweisen (Identität). Speziell bei zwei verschiedenen Zeichenketten s1 und s2 mit gleicher Zeichenfolge prüft die Methode equals(), ob die beiden Zeichenketten den gleichen Inhalt haben (Gleichartigkeit).\n So liefert s1.equals(s2) das Ergebnis true, dagegen liefert s1 == s2 das Ergebnis false." }
+            ],
+            "keyword": "Aggregation"
+        },
+        {
+            "id": "c5_7",
+            "type": "mc",
+            "mkdTitel": "**5.2 Arbeiten mit Referenzen**",
+            "mkdTexts": [
+                { "texts": "Wenn s1 und s2 zwei verschiedene Zeichenketten mit gleicher Zeichenfolge sind, welchen Wert liefern dann folgende Vergleiche zurück?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "s1 == s2 liefert true"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "s1 == s2 liefert false"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "s1.equals(s2) erzeugt einen Error"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Mit == wird überprüft, ob zwei Referenzen auf dasselbe Objekt verweisen (Identität). Speziell bei zwei verschiedenen Zeichenketten s1 und s2 mit gleicher Zeichenfolge prüft die Methode equals(), ob die beiden Zeichenketten den gleichen Inhalt haben (Gleichartigkeit).\n So liefert s1.equals(s2) das Ergebnis true, dagegen liefert s1 == s2 das Ergebnis false." }
+            ],
+            "keyword": "Aggregation"
+        },
+        {
+            "id": "c5_8",
+            "type": "mc",
+            "mkdTitel": "**5.3 Kommunikation zwischen Objekten**",
+            "mkdTexts": [
+                { "texts": "Welche Aussage zu Assoziationen stimmt?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Assoziationen beschreiben die Ähnlichkeit zwischen zwei Objekten."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Ein Objekt kann Methoden eines anderen Objektes aufrufen."}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Assoziationen werden im Klassendiagramm als ausgefüllte Raute dargestellt."}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Eine Assoziation beschreibt immer eine bestimmte Art von Kommunikation zwischen zwei Objekten, für die es folgende Möglichkeiten gibt: a) Ein Objekt nutzt Daten (Attributwerte) eines anderen Objektes. b) Ein Objekt ruft Methoden eines anderen Objektes auf. \nWenn die Attribute wie üblich privat sind, kann die direkte Nutzung von Attributwerten anderer Objekte nur stattfinden, wenn beide Objekte derselben Klasse angehören. In allen anderen Fällen kann diese Kommunikation nur über den Aufruf spezieller Lese- oder Schreibmethoden ausgeführt werden." }
+            ],
+            "keyword": "Assoziationen"
+        },
+        {
+            "id": "c5_9",
+            "type": "mc",
+            "mkdTitel": "**5.3 Kommunikation zwischen Objekten**",
+            "mkdTexts": [
+                { "texts": "Welche Aussage zu Assoziationen stimmt?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Ein Objekt kann Daten (Attributwerte) eines anderen Objektes nutzen."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Ein Objekt kann Methoden eines anderen Objektes aufrufen."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Assoziationen beschreiben die Kommunikation zwischen zwei Objekten."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Alle Aussagen stimmen."}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Alle Aussagen stimmen.\nEine Assoziation beschreibt immer eine bestimmte Art von Kommunikation zwischen zwei Objekten, für die es folgende Möglichkeiten gibt: a) Ein Objekt nutzt Daten (Attributwerte) eines anderen Objektes. b) Ein Objekt ruft Methoden eines anderen Objektes auf. \nWenn die Attribute wie üblich privat sind, kann die direkte Nutzung von Attributwerten anderer Objekte nur stattfinden, wenn beide Objekte derselben Klasse angehören. In allen anderen Fällen kann diese Kommunikation nur über den Aufruf spezieller Lese- oder Schreibmethoden ausgeführt werden." }
+            ],
+            "keyword": "Assoziationen"
+        },
+        {
+            "id": "c5_10",
+            "type": "mc",
+            "mkdTitel": "**5.3 Kommunikation zwischen Objekten**",
+            "mkdTexts": [
+                { "texts": "Was bedeuten \"unidirektionale Assoziation\""}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Bei der unidirektionalen Assoziation nutzt nur eines der beiden an der Beziehung beteiligten Objekte Attribute des anderen."}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Bei der unidirektionalen Assoziation nutzen beide an der Beziehung beteiligten Objekte Attribute des anderen."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Beide Aussagen stimmen nicht."}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Bei der unidirektionalen Assoziation nutzt nur eines der beiden an der Beziehung beteiligten Objekte Attribute des anderen. " }
+            ],
+            "keyword": "Assoziationen"
+        },
+        {
+            "id": "c5_11",
+            "type": "mc",
+            "mkdTitel": "**5.3 Kommunikation zwischen Objekten**",
+            "mkdTexts": [
+                { "texts": "Was bedeuten \"bidirektionale  Assoziation\""}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Bei der bidirektionalen Assoziation nutzen beide an der Beziehung beteiligten Objekte Attribute des anderen."}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Bei der bidirektionalen Assoziation nutzt nur eines der beiden an der Beziehung beteiligten Objekte Attribute des anderen."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Beide Aussagen stimmen nicht."}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Bei der bidirektionalen Assoziation jedoch nutzen beide an der Beziehung beteiligten Objekte Attribute des anderen." }
+            ],
+            "keyword": "Assoziationen"
+        },
+        {
+            "id": "c5_12",
+            "type": "mc",
+            "mkdTitel": "**5.4 Sequenzdiagramme**",
+            "mkdTexts": [
+                { "texts": "Welche Aussage über Sequenzdiagramme stimmt?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Sequenzdiagramme beschreiben die Interaktionen zwischen Objekten. "}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Sequenzdiagramme gelten nur innerhalb eines bestimmten Anwendungsfalls."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Sequenzdiagramme stellen die Kommunikation zwischen den Objekten dar."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Alle Aussagen stimmen."}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Alle Aussagen stimmen.\nObjekte kommunizieren untereinander, indem sie wechselseitig ihre Methoden aufrufen. Die zeitliche Folge dieser Methodenaufrufe lässt sich mithilfe von Sequenzdiagrammen gut veranschaulichen. Mit einem Sequenzdiagramm kann man allerdings nur einen von vielen möglichen Abläufen eines Programms darstellen." }
+            ],
+            "keyword": "Assoziationen"
+        },
+        ,
+        {
+            "id": "c5_13",
+            "type": "mc",
+            "mkdTitel": "**5.4 Sequenzdiagramme**",
+            "mkdTexts": [
+                { "texts": "Welche Aussage über Sequenzdiagramme stimmt?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Sequenzdiagramme beschreiben die Interaktionen zwischen Objekten. "}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Sequenzdiagramme stellen alle möglichen Abläufe eines Programmes dar."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Sequenzdiagramme beschreiben die Vererbungshierarchie innerhalb des Programmes."}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 4,
+                    "texts": [
+                        { "answerOption" : "Keine Aussage stimmt."}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Objekte kommunizieren untereinander, indem sie wechselseitig ihre Methoden aufrufen. Die zeitliche Folge dieser Methodenaufrufe lässt sich mithilfe von Sequenzdiagrammen gut veranschaulichen. Mit einem Sequenzdiagramm kann man allerdings nur einen von vielen möglichen Abläufen eines Programms darstellen." }
+            ],
+            "keyword": "Assoziationen"
         }
     ]
 }
