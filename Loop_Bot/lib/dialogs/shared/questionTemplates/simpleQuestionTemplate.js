@@ -64,11 +64,6 @@ class SimpleQuestion extends ComponentDialog {
                     if (step.result === ANTWORT + this.question.rightAnswerNr || step.result === "antwort" + this.question.rightAnswerNr || step.result == this.question.rightAnswerNr) {
                         // send feedback including the explanation
                         await step.context.sendActivity("✅ Richtig\n" + this.question.mkdAnswer);
-                        // let c = new Chapter();
-                        // c = user[this.chapter];
-                        // c.correct(this.question.id, true);
-                        // // correct(this.question.id, true);
-                        // user[this.chapter] = c;
                         // Move assingment to correctly answered 
                         user[this.chapter].correct(this.question.id, true);
                         saveLog(user.userId, this.question, this.question.rightAnswerNr, false, "", this.chapter);
@@ -81,10 +76,21 @@ class SimpleQuestion extends ComponentDialog {
                         await step.context.sendActivity("❌ Leider falsch\n" + this.question.mkdAnswer);
 
                         // TODO: temp remove
-                        await step.context.sendActivity("Ich habe bemerkt, dass du Fragen zu 'Objekten' noch nicht ganz gemeistert hast.\n\n[Klick hier, wenn du 'Objekte' noch einmal wiederholen möchstest.]()");
+                        // await step.context.sendActivity("Ich habe bemerkt, dass du Fragen zu 'Objekten' noch nicht ganz gemeistert hast.\n\n[Klick hier, wenn du 'Objekte' noch einmal wiederholen möchstest.]()");
 
                         // Move assingment to incorrectly answered 
-                        user[this.chapter].correct(this.question.id, false);
+                        if (this.question.keyword) {
+                            user[this.chapter].correct(this.question.id, false, this.question.keyword);
+                        } else {
+                            user[this.chapter].correct(this.question.id, false);
+                        }
+
+                        // call recommender function to check if the user has problems in topics
+                        let recommendation = user[this.chapter].recommendTopic();
+                        if (recommendation != false) {
+                            await step.context.sendActivity("Ich habe bemerkt, dass du Fragen zu dem Thema '" + recommendation.keyword + "' noch nicht ganz gemeistert hast.\n\n[Klick hier, wenn du '" + recommendation.keyword + "' noch einmal wiederholen möchstest.](" + recommendation.url + ")");
+                        }
+
                         // get answer number to save in log
                         const answer = step.result.substring(
                             step.result.lastIndexOf(ANTWORT) + 8,

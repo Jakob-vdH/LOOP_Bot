@@ -7,7 +7,7 @@ const { shuffle } = require("../shared/helpers");
 const { ResetQuestionsDialog } = require("../shared/profileDialogs");
 const { menuPrompt } = require("../shared/prompts");
 
-const CHAPTER_1 = "Chapter_1";
+const SECTION = "SectionDialog";
 const LOOP = "Chapter_loop";
 const TEXTPROMPT = "textprompt";
 
@@ -18,13 +18,11 @@ const lists = {
     "chapter4": Questions.chapter4,
     "chapter5": Questions.chapter5
 };
-// const list = Questions.questions;
 
-
-class Chapter1 extends ComponentDialog {
-    static get Name() { return CHAPTER_1 }
+class SectionDialog extends ComponentDialog {
+    static get Name() { return SECTION }
     constructor(onTurnAccessor, conversationState, userProfileAccessor) {
-        super(CHAPTER_1);
+        super(SECTION);
         // this.initialDialogId = LOOP;
         this.onTurnAccessor = onTurnAccessor;
         this.conversationState = conversationState;
@@ -57,8 +55,6 @@ class Chapter1 extends ComponentDialog {
                 }
             }
         ]));
-
-        // init user with questions
     }
 
     /**
@@ -74,6 +70,7 @@ class Chapter1 extends ComponentDialog {
 
     async startRandomQuestion(dc) {
 
+        // read chapter / section context
         let chapterOption = 'chapter1';
         if (dc.options && dc.options.chapter) {
             chapterOption = dc.options.chapter;
@@ -84,6 +81,8 @@ class Chapter1 extends ComponentDialog {
         if (userId === null || userId === undefined) {
             userId = "annonymous"
         }
+
+        // check if user exists, load if exists, create new profile if not
         const userProfileManager = new UserProfileManager();
         let user;
         let tmp = await this.userProfileAccessor.get(dc.context);
@@ -98,38 +97,34 @@ class Chapter1 extends ComponentDialog {
             this.userProfileAccessor.set(dc.context, user);
         } else {
             user = new UserProfile(tmp.userId, tmp.currentChapter, tmp.chapter1, tmp.chapter2, tmp.chapter3, tmp.chapter4, tmp.chapter5);
-            // user = new UserProfile(tmp.questionsPool, tmp.answeredQuestions, tmp.falseQuestions, tmp.language);
         }
 
+        // set chapter / section context if not given by the previous dialog
         if (chapterOption != user.currentChapter && dc.options.chapter === undefined) {
             chapterOption = user.currentChapter;
         }
 
+        // check if the questions pool is empty
         if (user[chapterOption].questionsPool.length === 0) {
+            // create a new question pool and update user profile
             user[chapterOption].createPool(lists[chapterOption]);
             user.currentChapter = chapterOption;
             await user.updateInDb();
             this.userProfileAccessor.set(dc.context, user);
+
+            // check if the questions pool is still empty, which is the case if the user asnwered all possible questions
             if (user[chapterOption].questionsPool.length === 0) {
                 return await dc.beginDialog(ResetQuestionsDialog.Name, { chapter: chapterOption });
             }
         }
-        // if (user.questionsPool.length === 0) {
-        //     user.createPool(list);
-        //     this.userProfileAccessor.set(dc.context, user);
-        //     if (user.questionsPool.length === 0) {
-        //         return await dc.beginDialog(ResetQuestionsDialog.Name);
-        //     }
-        // }
-        // if question type
-        switch(){
-            case "": return await dc.beginDialog(SimpleQuestion.Name, { chapter: chapterOption, number: (user[chapterOption].answeredQuestions.length + 1), total: lists[chapterOption].length });
-                break;
+        switch (user[chapterOption].questionsPool[0].type) {
             default:
+            case "mc": return await dc.beginDialog(SimpleQuestion.Name, { chapter: chapterOption, number: (user[chapterOption].answeredQuestions.length + 1), total: lists[chapterOption].length });
+                break;
         }
     }
 }
 
 module.exports = {
-    Chapter1: Chapter1
+    SectionDialog: SectionDialog
 }

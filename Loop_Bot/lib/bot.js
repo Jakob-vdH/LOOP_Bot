@@ -1,7 +1,7 @@
 const { TurnContext, ActivityTypes, CardFactory, MessageFactory } = require("botbuilder");
 const { ChoicePrompt, DialogSet, NumberPrompt, TextPrompt, WaterfallDialog } = require("botbuilder-dialogs");
 const { MainDispatcher } = require("./dialogs/dispatcher/index");
-const { WelcomeCard } = require('./dialogs/welcome');
+const { MenuCard } = require('./dialogs/welcome');
 const { OnTurnProperty } = require('./dialogs/shared/stateProperties');
 const { GifGreeting } = require("./dialogs/shared/gifs");
 
@@ -134,7 +134,7 @@ class LoopBot {
         }
         await turnContext.sendActivity(MessageFactory.attachment(CardFactory.heroCard(`Hi${userId}, ich bin der Loop-Bot`, msg)));
         // Send welcome card.
-        await turnContext.sendActivity(MessageFactory.attachment(CardFactory.adaptiveCard(WelcomeCard)));
+        await turnContext.sendActivity(MessageFactory.attachment(CardFactory.adaptiveCard(MenuCard)));
         //         }
         //     }
         // }

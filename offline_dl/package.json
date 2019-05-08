@@ -1,6 +1,5 @@
 {
   "name": "offline-directline-loop",
-  "version": "1.1",
   "description": "Using unofficial offline version of the Bot Framework Directline connector",
   "main": "",
   "scripts": {

@@ -1,8 +1,8 @@
 const { ComponentDialog, DialogSet, DialogTurnStatus, TextPrompt, WaterfallDialog } = require("botbuilder-dialogs");
 const { MessageFactory, CardFactory } = require("botbuilder");
 const { LuisRecognizer } = require("botbuilder-ai");
-const { WelcomeCard } = require("../welcome");
-const { Chapter1 } = require("../chapter_1");
+const { MenuCard } = require("../welcome");
+const { SectionDialog } = require("../section");
 const { GifError } = require("../shared/gifs");
 const { QnADispatcher } = require("../qna");
 
@@ -57,26 +57,11 @@ class MainDispatcher extends ComponentDialog {
         // keep on turn accessor and bot configuration
         this.onTurnAccessor = onTurnAccessor;
 
-        // add dialogs
+        // register dialogset
         this.dialogs = new DialogSet(this.mainDispatcherAccessor);
-        // über eine for-loop alle Dialoge dynamisch hinzufügen
+        // register dialogs
         this.addDialog(new QnADispatcher(this.onTurnAccessor, this.userProfileAccessor));
-        this.addDialog(new Chapter1(this.onTurnAccessor, this.conversationState, this.userProfileAccessor));
-        // this.addDialog(new Category1("CATEGORY1"));
-        // this.addDialog(new QnADialog(botConfig, this.userProfileAccessor));
-        // this.addDialog(new WhoAreYouDialog(botConfig, conversationState, this.userProfileAccessor, onTurnAccessor, this.reservationAccessor));
-        // this.addDialog(new BookTableDialog(botConfig, this.reservationAccessor, onTurnAccessor, this.userProfileAccessor, conversationState));
-
-        // add recognizer
-        // const luisConfig = botConfig.findServiceByNameOrId(LUIS_CONFIGURATION);
-        // if (!luisConfig || !luisConfig.appId) throw new Error(`Cafe Dispatch LUIS model not found in .bot file. Please ensure you have all required LUIS models created and available in the .bot file. See readme.md for additional information.\n`);
-        // this.luisRecognizer = new LuisRecognizer({
-        //     applicationId: luisConfig.appId,
-        //     endpoint: luisConfig.getEndpoint(),
-        //     // CAUTION: Authoring key is used in this example as it is appropriate for prototyping.
-        //     // When implimenting for deployment/production, assign and use a subscription key instead of an authoring key.
-        //     endpointKey: luisConfig.authoringKey
-        // });
+        this.addDialog(new SectionDialog(this.onTurnAccessor, this.conversationState, this.userProfileAccessor));
     }
 
     /**
@@ -133,16 +118,12 @@ class MainDispatcher extends ComponentDialog {
         // This will only be empty if there is no active dialog in the stack.
         if (!dc.context.responded && dialogTurnResult !== undefined && dialogTurnResult.status !== DialogTurnStatus.complete) {
             // If incoming on turn property does not have an intent, call LUIS and get an intent.
-            if (onTurnProperty === undefined || onTurnProperty.intent === '') {
-                // Call to LUIS recognizer to get intent + entities
+            if ((onTurnProperty === undefined || onTurnProperty.intent === '') && (dc.context.activity.text != "1" || dc.context.activity.text != "2" || dc.context.activity.text != "3" || dc.context.activity.text != "4" || dc.context.activity.text != "5")) {
 
+                // if no intent from the menu is detected analyse message in the QnADispatcher
                 await dc.beginDialog(QnADispatcher.Name);
-                await dc.context.sendActivity(MessageFactory.attachment(CardFactory.adaptiveCard(WelcomeCard)));
-                // const LUISResults = await this.luisRecognizer.recognize(dc.context);
-
-                // // Return new instance of on turn property from LUIS results.
-                // // Leverages static fromLUISResults method
-                // onTurnProperty = OnTurnProperty.fromLUISResults(LUISResults);
+                // after answering the question send the menu again
+                await dc.context.sendActivity(MessageFactory.attachment(CardFactory.adaptiveCard(MenuCard)));
             }
 
             // No one has responded so start the right child dialog.
@@ -154,10 +135,8 @@ class MainDispatcher extends ComponentDialog {
         // Examine result from dc.continue() or from the call to beginChildDialog().
         switch (dialogTurnResult.status) {
             case DialogTurnStatus.complete: {
-                // The active dialog finished successfully. Ask user if they need help with anything else.
-                await dc.context.sendActivity(MessageFactory.attachment(CardFactory.adaptiveCard(WelcomeCard)));
-                //await dc.context.sendActivity("Is there anything else I can help you with?");
-                //MessageFactory.suggestedActions(GenSuggestedQueries(), `Is there anything else I can help you with?`));
+                // The active dialog finished successfully. Show the main menu.
+                await dc.context.sendActivity(MessageFactory.attachment(CardFactory.adaptiveCard(MenuCard)));
                 break;
             }
             case DialogTurnStatus.waiting: {
@@ -185,43 +164,32 @@ class MainDispatcher extends ComponentDialog {
         if (onTurnProperty.intent.length > 0) {
             // Start appropriate child dialog based on intent
             switch (onTurnProperty.intent) {
-                // Help, ChitChat and QnA share the same QnA Maker model. So just call the QnA Dialog.
-                // case QnADialog.Name:
-                // case ChitChatDialog.Name:
-                // case HelpDialog.Name:
-                //     return await dc.beginDialog(QnADialog.Name);
-                // case BookTableDialog.Name:
-                //     return await dc.beginDialog(BookTableDialog.Name);
-                // case WhoAreYouDialog.Name:
-                //     return await dc.beginDialog(WhoAreYouDialog.Name);
-                // case WhatCanYouDoDialog.Name:
-                //     return await this.beginWhatCanYouDoDialog(dc, onTurnProperty);
                 case NONE_INTENT:
                 case "chapter_1":
-                    return await dc.beginDialog(Chapter1.Name, { chapter: "chapter1" });
+                    return await dc.beginDialog(SectionDialog.Name, { chapter: "chapter1" });
                 case "chapter_2":
-                    return await dc.beginDialog(Chapter1.Name, { chapter: "chapter2" });
+                    return await dc.beginDialog(SectionDialog.Name, { chapter: "chapter2" });
                 case "chapter_3":
-                    return await dc.beginDialog(Chapter1.Name, { chapter: "chapter3" });
+                    return await dc.beginDialog(SectionDialog.Name, { chapter: "chapter3" });
                 case "chapter_4":
-                    return await dc.beginDialog(Chapter1.Name, { chapter: "chapter4" });
+                    return await dc.beginDialog(SectionDialog.Name, { chapter: "chapter4" });
                 case "chapter_5":
-                    return await dc.beginDialog(Chapter1.Name, { chapter: "chapter5" });
+                    return await dc.beginDialog(SectionDialog.Name, { chapter: "chapter5" });
                 default:
-                // return await dc.context.sendActivity(MessageFactory.attachment(CardFactory.heroCard("Hmmm...", "Ich bin auch selber noch am üben... Es tut mir leid ich weiß nicht was du meinst.\n\n![Gif Error](" + GifError() + ")")));
-                //return await dc.context.sendActivity(`Follow [this link](https://www.bing.com/search?q=${dc.context.activity.text}) to search the web!`);
+                    break;
             }
         } else if (dc.context.activity.text) {
+            // also react on inputted numbers
             if (dc.context.activity.text.includes("1")) {
-                return await dc.beginDialog(Chapter1.Name);
+                return await dc.beginDialog(SectionDialog.Name);
             } else if (dc.context.activity.text.includes("2")) {
-                return await dc.beginDialog(Chapter1.Name, { chapter: "chapter2" });
+                return await dc.beginDialog(SectionDialog.Name, { chapter: "chapter2" });
             } else if (dc.context.activity.text.includes("3")) {
-                return await dc.beginDialog(Chapter1.Name, { chapter: "chapter3" });
+                return await dc.beginDialog(SectionDialog.Name, { chapter: "chapter3" });
             } else if (dc.context.activity.text.includes("4")) {
-                return await dc.beginDialog(Chapter1.Name, { chapter: "chapter4" });
+                return await dc.beginDialog(SectionDialog.Name, { chapter: "chapter4" });
             } else if (dc.context.activity.text.includes("5")) {
-                return await dc.beginDialog(Chapter1.Name, { chapter: "chapter5" });
+                return await dc.beginDialog(SectionDialog.Name, { chapter: "chapter5" });
             } else {
                 return await dc.context.sendActivity(MessageFactory.attachment(CardFactory.heroCard("Hmmm...", "Ich bin auch selber noch am üben... Es tut mir leid ich weiß nicht was du meinst. Bitte versuche es erneut oder klicke eins der Kapitel an.\n\n![Gif Error](" + GifError() + ")")));
             }
@@ -242,52 +210,15 @@ class MainDispatcher extends ComponentDialog {
         let outcome = { allowed: true, reason: '' };
         if (requestedOperation === undefined) return outcome;
         if (activeDialog !== undefined && activeDialog.id !== undefined) {
-            // E.g. What_can_you_do is not possible when you are in the middle of Who_are_you dialog
-            // if (requestedOperation === WhatCanYouDoDialog.Name) {
-            //     if (activeDialog.id === WhoAreYouDialog.Name) {
-            //         outcome.allowed = false;
-            //         outcome.reason = `Sorry! I'm unable to process that. You can say 'cancel' to cancel this conversation..`;
-            //     }
-            // }
+            // a check if the Dialog is allowed can be placed here if wanted
         } else {
             if (requestedOperation === CANCEL_INTENT) {
                 outcome.allowed = false;
-                outcome.reason = `Sure, but there is nothing to cancel..`;
+                outcome.reason = `Ich kann leider nichts zum abbrechen finden..`;
             }
         }
         return outcome;
     }
-
-    // /**
-    //  * Helper method to begin what can you do dialog.
-    //  *
-    //  * @param {DialogContext} dc dialog context
-    //  * @param {OnTurnProperty} onTurnProperty
-    //  */
-    // async beginWhatCanYouDoDialog(dc, onTurnProperty) {
-    //     // Handle case when user interacted with the what can you do card.
-    //     // What can you do card sends a custom data property with intent name, text value and possible entities.
-    //     // See ../whatCanYouDo/resources/whatCanYouDoCard.json for card definition.
-    //     let queryProperty = (onTurnProperty.entities || []).filter(item => item.entityName === QUERY_PROPERTY);
-    //     if (queryProperty.length !== 0) {
-    //         let parsedJSON;
-    //         try {
-    //             parsedJSON = JSON.parse(queryProperty[0].entityValue);
-    //         } catch (err) {
-    //             return await dc.context.sendActivity(`Choose a query from the card drop down before you click 'Let's talk!'`);
-    //         }
-    //         if (parsedJSON.text !== undefined) {
-    //             dc.context.activity.text = parsedJSON.text;
-    //             await dc.context.sendActivity(`You said: '${dc.context.activity.text}'`);
-    //         }
-    //         // create a set a new on turn property
-    //         let newOnTurnProperty = OnTurnProperty.fromCardInput(parsedJSON);
-    //         await this.onTurnAccessor.set(dc.context, newOnTurnProperty);
-    //         return await this.beginChildDialog(dc, newOnTurnProperty);
-    //     }
-    //     return await dc.beginDialog(WhatCanYouDoDialog.Name);
-    // }
-
 };
 
 module.exports = {

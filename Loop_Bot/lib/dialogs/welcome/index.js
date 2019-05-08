@@ -1,3 +1,3 @@
-const WelcomeCard = require("./ressources/welcomeCard.json");
+const MenuCard = require("./ressources/menuCard.json");
 
-exports.WelcomeCard = WelcomeCard;
+exports.MenuCard = MenuCard;

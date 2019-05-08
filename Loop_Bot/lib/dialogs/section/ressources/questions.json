@@ -32,7 +32,43 @@
             ],
             "mkdAnswers": [
                 { "texts": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen." }
-            ]
+            ],
+            "keyword": "Objekte"
+        },
+        {
+            "id": "c1_2",
+            "type": "mc",
+            "mkdTitel": "**1.2 Objekte**",
+            "mkdTexts": [
+                { "texts": "Was beschreiben die Attribut-Werte eines Objektes?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Die Eigenschaften eines Objektes."}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Den Speicherort eines Objektes"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Die Häufigkeit des Vorkommens eines Objektes"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen." }
+            ],
+            "keyword": "Objekte"
         },
         {
             "id": "c1_3",
@@ -76,7 +112,8 @@
                 { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
                 { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
                 { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
-            ]
+            ],
+            "keyword": "Objekte"
         }
     ],
     "chapter2": [

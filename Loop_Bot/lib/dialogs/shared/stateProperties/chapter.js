@@ -1,5 +1,7 @@
 const { shuffle } = require("../helpers");
 const poolSize = require("../../../config.json").poolSize;
+const Recommender = require("./recommenderDictionary.json");
+const recommenderFilter = 3; //TODO: in config
 
 class Chapter {
     /**
@@ -24,7 +26,7 @@ class Chapter {
      * @param {String} questionId 
      * @param {Boolean} correct was the given questionId answered correctly
      */
-    correct(questionId, correct) {
+    correct(questionId, correct, keyword) {
         if (correct) {
             if (this.falseQuestions.length > 0) {
                 this.falseQuestions = this.arrayRemove(this.falseQuestions, questionId);
@@ -41,7 +43,11 @@ class Chapter {
                 }
             }
             if (this.falseQuestions.find(id => id === questionId) === undefined) {
-                this.falseQuestions.push(questionId);
+                if (keyword) {
+                    this.falseQuestions.push({ id: questionId, keyword: keyword });
+                } else {
+                    this.falseQuestions.push({ id: questionId });
+                }
             }
         }
         if (this.questionsPool.length > 0) {
@@ -113,7 +119,7 @@ class Chapter {
      */
     arrayRemove(arr, value) {
         return arr.filter(function (ele) {
-            return ele != value;
+            return ele.id != value;
         });
     }
 
@@ -122,7 +128,7 @@ class Chapter {
      * should consist of mkdTexts:Array && mkdTitel:String && mkdQuestions:Array && mkdAnwsers:Array
      */
     generateQuestion(questions) {
-        if (questions && questions.mkdTexts && questions.mkdTitel && questions.mkdQuestions && questions.mkdAnswers) {
+        if (questions && questions.mkdTexts && questions.mkdTitel && questions.mkdQuestions && questions.mkdAnswers && questions.keyword) {
             let question = {
                 id: "",
                 mkdTitel: "",
@@ -130,6 +136,7 @@ class Chapter {
                 mkdAnswer: "",
                 answerCount: 0,
                 rightAnswerNr: 0,
+                keyword: ""
             }
             // get random question "seed" to have random attributes in the question for example / more than one question option in one question
             const random = Math.floor((Math.random() * questions.mkdTexts.length));
@@ -155,11 +162,42 @@ class Chapter {
             }
             // set right answer text
             question.mkdAnswer = questions.mkdAnswers[random].texts + "\n( richtig ist **Antwort " + question.rightAnswerNr + "** )";
+            question.keyword = questions.keyword;
             return question;
         } else {
             console.error("Tried to generate Question from not accepted input format:\n" + questions);
             return null;
         }
+    }
+
+    /**
+     * Recommender function that checks if the user answer questions for recurring keywords wrong
+     */
+    recommendTopic() {
+        for (var i = 0; i < this.falseQuestions.length; i++) {
+            if (this.falseQuestions[i].keyword) {
+                let keyword = this.falseQuestions[i].keyword;
+                let count = this.countInArray(this.falseQuestions, keyword);
+                if (count >= recommenderFilter) {
+                    if (Recommender[keyword] != undefined) {
+                        return { url: Recommender[keyword], keyword: keyword };
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    countInArray(array, keyword) {
+        var count = 0;
+        for (var i = 0; i < array.length; i++) {
+            if (array[i].keyword) {
+                if (array[i].keyword === keyword) {
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 }
 
