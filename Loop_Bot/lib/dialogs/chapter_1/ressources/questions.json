@@ -1,0 +1,791 @@
+{
+    "chapter1": [
+        {
+            "id": "c1_1",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Welche Aussage zu Objekten trifft zu?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Objekte brauchen keinen eindeutigen Bezeichner"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Objekte besitzen mindestens 2 Attribute"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Die Eigenschaften eines Objektes werden über Attribut-Werte bestimmt"}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen." }
+            ]
+        },
+        {
+            "id": "c1_3",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
+                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
+                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
+                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
+                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "`schrank1.hoehe = 200`"},
+                        { "answerOption" : "`bett1.breite = 90`"},
+                        { "answerOption" : "`stuhl1.farbe = Rot`"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "`schrank1_hoehe = 200`"},
+                        { "answerOption" : "`bett1_breite = 90`"},
+                        { "answerOption" : "`stuhl1_farbe = Rot`"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
+            ]
+        }
+    ],
+    "chapter2": [
+        {
+            "id": "c1_1",
+            "type": "mc",
+            "mkdTitel": "**2.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Welche Aussage zu Objekten trifft zu?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "Objekte brauchen keinen eindeutigen Bezeichner"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "Objekte besitzen mindestens 2 Attribute"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "Die Eigenschaften eines Objektes werden über Attribut-Werte bestimmt"}
+                    ],
+                    "right": true
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen." }
+            ]
+        },
+        {
+            "id": "c1_3",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
+                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
+                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
+                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
+                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "`schrank1.hoehe = 200`"},
+                        { "answerOption" : "`bett1.breite = 90`"},
+                        { "answerOption" : "`stuhl1.farbe = Rot`"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "`schrank1_hoehe = 200`"},
+                        { "answerOption" : "`bett1_breite = 90`"},
+                        { "answerOption" : "`stuhl1_farbe = Rot`"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
+            ]
+        },
+        {
+            "id": "c1_3",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
+                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
+                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
+                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
+                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "`schrank1.hoehe = 200`"},
+                        { "answerOption" : "`bett1.breite = 90`"},
+                        { "answerOption" : "`stuhl1.farbe = Rot`"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "`schrank1_hoehe = 200`"},
+                        { "answerOption" : "`bett1_breite = 90`"},
+                        { "answerOption" : "`stuhl1_farbe = Rot`"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
+            ]
+        },
+        {
+            "id": "c1_3",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
+                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
+                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
+                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
+                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "`schrank1.hoehe = 200`"},
+                        { "answerOption" : "`bett1.breite = 90`"},
+                        { "answerOption" : "`stuhl1.farbe = Rot`"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "`schrank1_hoehe = 200`"},
+                        { "answerOption" : "`bett1_breite = 90`"},
+                        { "answerOption" : "`stuhl1_farbe = Rot`"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
+            ]
+        },
+        {
+            "id": "c1_3",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
+                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
+                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
+                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
+                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "`schrank1.hoehe = 200`"},
+                        { "answerOption" : "`bett1.breite = 90`"},
+                        { "answerOption" : "`stuhl1.farbe = Rot`"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "`schrank1_hoehe = 200`"},
+                        { "answerOption" : "`bett1_breite = 90`"},
+                        { "answerOption" : "`stuhl1_farbe = Rot`"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
+            ]
+        },
+        {
+            "id": "c1_3",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
+                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
+                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
+                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
+                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "`schrank1.hoehe = 200`"},
+                        { "answerOption" : "`bett1.breite = 90`"},
+                        { "answerOption" : "`stuhl1.farbe = Rot`"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "`schrank1_hoehe = 200`"},
+                        { "answerOption" : "`bett1_breite = 90`"},
+                        { "answerOption" : "`stuhl1_farbe = Rot`"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
+            ]
+        },
+        {
+            "id": "c1_3",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
+                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
+                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
+                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
+                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "`schrank1.hoehe = 200`"},
+                        { "answerOption" : "`bett1.breite = 90`"},
+                        { "answerOption" : "`stuhl1.farbe = Rot`"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "`schrank1_hoehe = 200`"},
+                        { "answerOption" : "`bett1_breite = 90`"},
+                        { "answerOption" : "`stuhl1_farbe = Rot`"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
+            ]
+        },
+        {
+            "id": "c1_3",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
+                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
+                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
+                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
+                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "`schrank1.hoehe = 200`"},
+                        { "answerOption" : "`bett1.breite = 90`"},
+                        { "answerOption" : "`stuhl1.farbe = Rot`"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "`schrank1_hoehe = 200`"},
+                        { "answerOption" : "`bett1_breite = 90`"},
+                        { "answerOption" : "`stuhl1_farbe = Rot`"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
+            ]
+        },
+        {
+            "id": "c1_3",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
+                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
+                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
+                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
+                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "`schrank1.hoehe = 200`"},
+                        { "answerOption" : "`bett1.breite = 90`"},
+                        { "answerOption" : "`stuhl1.farbe = Rot`"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "`schrank1_hoehe = 200`"},
+                        { "answerOption" : "`bett1_breite = 90`"},
+                        { "answerOption" : "`stuhl1_farbe = Rot`"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
+            ]
+        },
+        {
+            "id": "c1_3",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
+                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
+                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
+                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
+                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "`schrank1.hoehe = 200`"},
+                        { "answerOption" : "`bett1.breite = 90`"},
+                        { "answerOption" : "`stuhl1.farbe = Rot`"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "`schrank1_hoehe = 200`"},
+                        { "answerOption" : "`bett1_breite = 90`"},
+                        { "answerOption" : "`stuhl1_farbe = Rot`"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
+            ]
+        },
+        {
+            "id": "c1_3",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
+                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
+                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
+                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
+                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "`schrank1.hoehe = 200`"},
+                        { "answerOption" : "`bett1.breite = 90`"},
+                        { "answerOption" : "`stuhl1.farbe = Rot`"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "`schrank1_hoehe = 200`"},
+                        { "answerOption" : "`bett1_breite = 90`"},
+                        { "answerOption" : "`stuhl1_farbe = Rot`"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
+            ]
+        },
+        {
+            "id": "c1_3",
+            "type": "mc",
+            "mkdTitel": "**2.1 Objekte**",
+            "mkdTexts": [
+                { "texts": "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?"},
+                { "texts": "Wie kann ich  die Breite meines `bett1: RECHTECK` auf 90 setzten?"},
+                { "texts": "Wie kann ich  die Farbe meines `stuhl1: KREIS` auf Rot setzten?"}
+            ],
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOption" : "`schrank1: Rechteck = Hoehe 200`"},
+                        { "answerOption" : "`bett1: Rechteck = Breite 90`"},
+                        { "answerOption" : "`stuhl1: KREIS = Farbe Rot`"}
+                    ],
+                    "right": false
+                },
+                {
+                    "id": 2,
+                    "texts": [
+                        { "answerOption" : "`schrank1.hoehe = 200`"},
+                        { "answerOption" : "`bett1.breite = 90`"},
+                        { "answerOption" : "`stuhl1.farbe = Rot`"}
+                    ],
+                    "right": true
+                },
+                {
+                    "id": 3,
+                    "texts": [
+                        { "answerOption" : "`schrank1_hoehe = 200`"},
+                        { "answerOption" : "`bett1_breite = 90`"},
+                        { "answerOption" : "`stuhl1_farbe = Rot`"}
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswers": [
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Breite des bett1 mit dem Aufruf `bett1.breite = 90`." },
+                { "texts": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Farbe des stuhl1 mit dem Aufruf `stuhl1.farbe = Rot`." }
+            ]
+        }
+    ],
+    "chapter3": [],
+    "chapter4": [],
+    "chapter5": [],
+    "questions": [
+        {
+            "id": "",
+            "type": "",
+            "mkdTitel": "",
+            "mkdText": "",
+            "mkdQuestions": [
+                {
+                    "id": 1,
+                    "texts": [
+                        { "answerOptions": "" }
+                    ],
+                    "right": false
+                }
+            ],
+            "mkdAnswer": ""
+        },
+        {
+            "id": "c1_1",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdText":  "Welche Aussage zu Objekten trifft zu?\n\n**(1)** Objekte brauchen keinen eindeutigen Bezeichner\n\n**(2)** Objekte besitzen mindestens 2 Attribute\n\n**(3)** Die Eigenschaften eines Objektes werden über Attribut-Werte bestimmt",
+            "mkdAnwser": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen. \n( richtig ist **Anwort 3** )",
+            "titel": "1.1 Objekte\nWelche Aussage zu Objekten trifft zu?",
+            "text": "(1) Objekte brauchen keinen eindeutigen Bezeichner \n(2) Objekte besitzen mindestens 2 Attribute \n(3) Die Eigenschaften eines Objektes werden über Attribut-Werte bestimmt",
+            "anser": "Viele elektronische Dokumente bestehen aus einzelnen Objekten. Jedes Objekt benötigt zur genauen Identifizierung einen eindeutigen Bezeichner. \n( richtig ist Anwort 3 )",
+            "answerCount": 3,
+            "rightAnswerNr": 3
+        },
+        {
+            "id": "c1_2",
+            "type": "mc",
+            "mkdTitel": "**1.2 Objekte**",
+            "mkdText":  "Was beschreiben die Attribut-Werte eines Objektes?\n\n**(1)** Die Eigenschaften eines Objektes. \n\n**(2)** Den Speicherort eines Objektes. \n\n**(3)** Die Häufigkeit des Vorkommens eines Objektes.",
+            "mkdAnwser": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen. \n( richtig ist **Anwort 1** )",
+            "titel": "1.2 Objekte\nWas beschreiben die Attribut-Werte eines Objektes?",
+            "text": "(1) Die Eigenschaften eines Objektes. \n(2) Den Speicherort eines Objektes. \n(3) Die Häufigkeit des Vorkommens eines Objektes.",
+            "anser": "Die Eigenschaften der Objekte werden durch die Werte ihrer Attribute beschrieben. Ein Objekt kann mehrere Attribute besitzen. \n( richtig ist Anwort 1 )",
+            "answerCount": 3,
+            "rightAnswerNr": 1
+        },
+        {
+            "id": "c1_3",
+            "type": "mc",
+            "mkdTitel": "**1.1 Objekte**",
+            "mkdText":  "Wie kann ich  die Höhe meines `schrank1: RECHTECK` auf 200 setzten?\n\n**(1)** `schrank1: Rechteck = Hoehe 200`\n\n**(2)** `schrank1.hoehe = 200`\n\n**(3)** `schrank1_hoehe = 200`",
+            "mkdAnwser": "Attribute eines Objektes können über den Aufruf `objekt1.attribut1 = x` gesetzt werden.\nIn unserer Aufgabe setzten wir deshalb die Höhe des schrank1 mit dem Aufruf `schrank1.hoehe = 200`. \n(richtig ist **Antwort 2**)",
+            "titel": "",
+            "text": "",
+            "anser": "",
+            "answerCount": 3,
+            "rightAnswerNr": 2
+        },
+        {
+            "id": "c1_4",
+            "type": "mc",
+            "mkdTitel": "**1.2 Klassen**",
+            "mkdText":  "Was ist eine Klasse?\n\n**(1)** Ein Konstruktionsplan für bestimmte Objekte.\n\n**(2)** Eine Menge von Objekten.\n\n**(3)** Zusammenfassung einer Gruppe von Attributwerten.",
+            "mkdAnwser": "Eine Klasse stellt einen Konstruktionsplan für bestimmte Objekte dar, der mit all seinen Informationen auch ohne diese Objekte existiert. \nEine Klasse ist also keine Menge von Objekten!\n(richtig ist **Antwort 1**)",
+            "titel": "",
+            "text": "",
+            "anser": "",
+            "answerCount": 3,
+            "rightAnswerNr": 1
+        },
+        {
+            "id": "c1_5",
+            "type": "mc",
+            "mkdTitel": "**1.2 Klassen**",
+            "mkdText":  "Welche Aussage über Klassen stimmt?\n\n**(1)** Objekte derselben Klasse besitzen die gleichen Attributwerte.\n\n**(2)** Alle Klassen besitzen die gleichen Attribute.\n\n**(3)** Objekte derselben Klasse besitzen die gleichen Attribute.\n\n**(4)** Eine Klasse ist eine Menge von Objekten.",
+            "mkdAnwser": "Objekte werden nach der Menge ihrer Attribute in Klassen eingeteilt, das heißt: Objekte der gleichen Klasse haben dieselben Attribute (aber nicht notwenigerweise dieselben Attributwerte!). \nEine Klasse ist also keine Menge von Objekten!\n(richtig ist **Antwort 3**)",
+            "titel": "",
+            "text": "",
+            "anser": "",
+            "answerCount": 4,
+            "rightAnswerNr": 3
+        },
+        {
+            "id": "c1_6",
+            "type": "mc",
+            "mkdTitel": "**1.2 Klassen**",
+            "mkdText":  "Welches Element enthält diese Objektkarte **nicht**?\n\n![Objektkarte](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/2a6e738c221c964bd1d6afd119916210/asset-v1:TUMx+LOOPx+3T2018+type@asset+block/LOOP_2016_1-1-10_exercise_01.png)\n\n**(1)** Objektname.\n\n**(2)** Attributbezeichner\n\n**(3)** Attributwerte\n\n**(4)** Klassenname\n\n**(5)** Methoden",
+            "mkdAnwser": "Objekte setzen sich aus Attributen und Methoden zusammen, wobei jedes Attribut zu einem bestimmten Zeitpunkt einen bestimmten Wert hat. Die Objektkarte stellt dies übersichtlich dar. Sie enthält neben den Attributen und Attributwerten auch den Objektnamen und Namen der zugehörigen Klasse.\nÄhnlich wie Objekte stellt man Klassen oft als Klassenkarten dar. Sie unterscheiden sich von den Objektkarten durch das Fehlen der Attributwerte. Methoden sind im Konstruktionsplan der Klasse definiert und werden daher in der Klassenkarte aufgelistet, auch wenn sie über Objekte aufgerufen werden. In den Objektkarten kann man die Methoden auch weglassen.\n(richtig ist **Antwort 5**)",
+            "titel": "",
+            "text": "",
+            "anser": "",
+            "answerCount": 5,
+            "rightAnswerNr": 5
+        },
+        {
+            "id": "c1_7",
+            "type": "mc",
+            "mkdTitel": "**1.2 Klassen**",
+            "mkdText":  "Welche Aussage über Objekt- und Klassenkarten ist richtig?\n\n**(1)** Nur die Klassenkarte enthält Attributwerte.\n\n**(2)** Die Objektkarte stellt den allgemeinen Zustand einer Klasse dar.\n\n**(3)** In der Objektkarte werden die Attribute **ohne** ihre Werte notiert.\n\n**(4)** Eine Klassenkarte zeigt alle grundlegenden Informationen zu einer Klasse.",
+            "mkdAnwser": "Objekte setzen sich aus Attributen und Methoden zusammen, wobei jedes Attribut zu einem bestimmten Zeitpunkt einen bestimmten Wert hat. Die Objektkarte stellt dies übersichtlich dar. Sie enthält neben den Attributen und Attributwerten auch den Objektnamen und Namen der zugehörigen Klasse.\nÄhnlich wie Objekte stellt man Klassen oft als Klassenkarten dar. Sie unterscheiden sich von den Objektkarten durch das Fehlen der Attributwerte. Methoden sind im Konstruktionsplan der Klasse definiert und werden daher in der Klassenkarte aufgelistet, auch wenn sie über Objekte aufgerufen werden. In den Objektkarten kann man die Methoden auch weglassen.\n(richtig ist **Antwort 4**)",
+            "titel": "",
+            "text": "",
+            "anser": "",
+            "answerCount": 4,
+            "rightAnswerNr": 4
+        },
+        {
+            "id": "c1_8",
+            "type": "mc",
+            "mkdTitel": "**1.3 Methoden und Parameter**",
+            "mkdText":  "Was ist eine Methode?\n\n**(1)** Eine Operation, die von einem Objekt ausgeführt werden kann.\n\n**(2)** Ein Attribut eines Objektes.\n\n**(3)** Ein Argument einer Operation.\n\n**(4)** Ein Argument einer Klasse.",
+            "mkdAnwser": "Objekte können auf Befehl gewisse Operationen (auch Methoden genannt) ausführen.\n(richtig ist **Antwort 1**)",
+            "titel": "",
+            "text": "",
+            "anser": "",
+            "answerCount": 4,
+            "rightAnswerNr": 1
+        },
+        {
+            "id": "c1_9",
+            "type": "mc",
+            "mkdTitel": "**1.3 Methoden und Parameter**",
+            "mkdText":  "Was ist ein Parameter?\n\n**(1)** Ein Übergabewert an ein Objekt.\n\n**(2)** Ein Argument einer Methode.\n\n**(3)** Ein Attributwert einer Methode.\n\n**(4)** Eine Methode eines Objektes.",
+            "mkdAnwser": "Bei vielen Methoden muss man durch ein oder mehrere Argumente (Parameter) festlegen, mit welchen Eingaben sie ausgeführt werden sollen.\n(richtig ist **Antwort 2**)",
+            "titel": "",
+            "text": "",
+            "anser": "",
+            "answerCount": 4,
+            "rightAnswerNr": 2
+        },
+        {
+            "id": "c1_10",
+            "type": "mc",
+            "mkdTitel": "**1.3 Methoden und Parameter**",
+            "mkdText":  "Wählen Sie die geeignete Methoden aus, durch die Sie Bild1 zu Bild2 transformieren?\n\nBild1:\n![Bild1](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/ba30c854a397aec4cc66f0724747daa7/asset-v1:TUMx+LOOPx+3T2018+type@asset+block/LOOP_2016_1-2-4_1_Bild_03_klein.png)\n\nBild2:\n![Bild2](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/b78e13733ff2d8e731434b5556d86c79/asset-v1:TUMx+LOOPx+3T2018+type@asset+block/LOOP_2016_1-2-4_1_Bild_04_klein.png)\n\n**(1)**\n`kreis1.verschieben(1,2)\ndreieck1.skalieren(2)\ndreieck1.füllen(grün)`.\n\n**(2)**\n `kreis1.skalieren(2)\ndreieck1.verschieben(0, -3)\ndreieck1.füllen(grün)`.\n\n**(3)**\n `kreis1.skalieren(2)\nkreis1.setzeLinienfarbe(blau)\ndreieck1.füllen(grün)` \n\n**(4)**\n `kreis1.füllen(lila)\nkreis1.skalieren(2)\ndreieck1.füllen(gelb)`",
+            "mkdAnwser": "Erst vergrößern wir den Kreis um 2 Blöcke mit `kreis1.skalieren(2)`. Dann verschieben wir das Dreieck ins untere Eck mit `dreieck1.verschieben(0, -3)`. Abschließend färben wir das Dreieck mit `dreieck1.füllen(grün)`. So gelangen wir von Bild1 zu Bild2.\n(richtig ist **Antwort 2**)",
+            "titel": "",
+            "text": "",
+            "anser": "",
+            "answerCount": 4,
+            "rightAnswerNr": 2
+        },
+        {
+            "id": "c1_11",
+            "type": "mc",
+            "mkdTitel": "**1.4 Beziehungen**",
+            "mkdText":  "Welche Aussage zu Objektdiagrammen stimmt?\n\n**(1)** Objektdiagramme sind Strukturdiagramme. \n\n**(2)** Zeigen den allgemeinen Zustand eines Systems.\n\n**(3)** Stellen Klassen, Schnittstellen und deren Beziehungen grafisch dar.",
+            "mkdAnwser": "Objektdiagramme sind Strukturdiagramme, die eine bestimmte Sicht auf die Struktur des modellierten Systems darstellen. Sie umfassen die Ausprägungsspezifikationen von Klassen und Assoziationen. Objektdiagramme zeigen stets den aktuellen Zustand, das heißt die aktuelle Belegung der Attribute.\n(richtig ist **Antwort 1**)",
+            "titel": "",
+            "text": "",
+            "anser": "",
+            "answerCount": 3,
+            "rightAnswerNr": 1
+        },
+        {
+            "id": "c1_12",
+            "type": "mc",
+            "mkdTitel": "**1.4 Beziehungen**",
+            "mkdText":  "Welche Aussage zu Objektdiagrammen stimmt?\n\n**(1)** Umfassen Ausprägungsspezifikationen von Klassen und Assoziationen.\n\n**(2)** Objektdiagramme sind keine Strukturdiagramme.\n\n**(3)** Stellen Klassen, Schnittstellen und deren Beziehungen grafisch dar.",
+            "mkdAnwser": "Objektdiagramme sind Strukturdiagramme, die eine bestimmte Sicht auf die Struktur des modellierten Systems darstellen. Sie umfassen die Ausprägungsspezifikationen von Klassen und Assoziationen. Objektdiagramme zeigen stets den aktuellen Zustand, das heißt die aktuelle Belegung der Attribute.\n(richtig ist **Antwort 1**)",
+            "titel": "",
+            "text": "",
+            "anser": "",
+            "answerCount": 3,
+            "rightAnswerNr": 1
+        },
+        {
+            "id": "c1_13",
+            "type": "mc",
+            "mkdTitel": "**1.4 Beziehungen**",
+            "mkdText":  "Welche Aussage zu Klassendiagrammen stimmt?\n\n**(1)** Stellen eine bestimmte Sicht auf die Struktur eines Systems dar.\n\n**(2)** Zeigen den aktuellen Zustand eines Systems.\n\n**(3)** Zeigen den allgemeinen Zustand eines Systems.\n\n**(4)** Umfassen Ausprägungsspezifikationen von Klassen und Assoziationen.",
+            "mkdAnwser": "Klassendiagramme sind ebenfalls Strukturdiagramme. Sie stellen Klassen, Schnittstellen und deren Beziehungen grafisch dar.\nDie Attribute in Klassendiagrammen haben keine genauen Werte .\n(richtig ist **Antwort 3**)",
+            "titel": "",
+            "text": "",
+            "anser": "",
+            "answerCount": 4,
+            "rightAnswerNr": 3
+        },
+        {
+            "id": "c1_14",
+            "type": "mc",
+            "mkdTitel": "**1.4 Beziehungen**",
+            "mkdText":  "Ist das dargestellte Diagramm ein Objekt- oder Klassendiagramm?\n![Diagramm](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/da2df3f24709a3e726e7f1ba29da1057/asset-v1:TUMx+LOOPx+3T2018+type@asset+block/LOOP_2016_1-4-2_v1.png)\n\n**(1)** Objektdiagramm\n\n**(2)** Klassendiagramm",
+            "mkdAnwser": "Das dargstellte Diagramm ist ein Objektdiagramm. Dies kann man u.A. gut an den vorhandenen Attributwerten erkennen.\n(richtig ist **Antwort 1**)",
+            "titel": "",
+            "text": "",
+            "anser": "",
+            "answerCount": 2,
+            "rightAnswerNr": 1
+        }
+    ]
+}

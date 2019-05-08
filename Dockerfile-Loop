@@ -1,0 +1,29 @@
+FROM node:latest
+
+MAINTAINER Jakob von der Haar
+
+# Create app directory
+#RUN mkdir -p /usr/src/app
+
+# Install app dependencies
+COPY Loop_Bot/package.json /usr/src/app/bot/
+COPY offline_dl/package.json /usr/src/app/dl/
+
+WORKDIR /usr/src/app/bot
+RUN npm install
+WORKDIR /usr/src/app/dl
+RUN npm install
+RUN npm i pm2 -g
+
+# Bundle app source 
+COPY ./Loop_Bot /usr/src/app/bot
+COPY ./offline_dl /usr/src/app/dl
+COPY ./process.yml /usr/src/app
+
+# Expose the Directline API port
+EXPOSE 3000
+
+# Start Node processes using PM2
+WORKDIR /usr/src/app/
+ENTRYPOINT ["pm2", "--no-daemon", "start"]
+CMD ["process.yml"]

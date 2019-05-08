@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <script type="text/javascript" src="https://cdn.botframework.com/botframework-webchat/master/webchat.js"></script>
+    <link rel="stylesheet" href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" />
+    <script type="text/javascript" src="https://unpkg.com/markdown-it/dist/markdown-it.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/adaptivecards@1.1.1/dist/adaptivecards.min.js"></script>
+
+    <style>
+        /* Custom Styling */
+        html, body { height: 100%}
+
+        #webchat {
+            width: 100%;
+            height: 100%;
+            background-color:#fff ;
+            outline: 1px grey solid;
+
+        }
+    </style>
+  </head>
+  <body>
+    <div id="webchat" role="main"></div>
+    <script>
+      (async function () {
+        // CONFIGURATION
+        const domain = 'http://localhost:3000/directline';
+        const webSocket = false;
+
+        // Load user data
+        let tmp = "";
+        let username = "";
+        let id = "";
+        async function load() {
+            var name = "prod-edx-user-info" + "=";
+            var ca = document.cookie.split(';');
+            for(var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    tmp = c.substring(name.length, c.length);
+                    username = tmp.substring(
+                        tmp.lastIndexOf("{\"username\": \"") + 19, 
+                        tmp.indexOf("\"version") - 8
+                    );
+                }
+            };
+            var url_string = window.location.href;
+            var url = new URL(url_string);
+            id = url.searchParams.get("userid");
+        }
+        await load();
+
+        // Create store and send event as soon as the connection is fulfilled
+        const store = window.WebChat.createStore({}, ({ dispatch }) => next => action => {
+            if (action.type === 'DIRECT_LINE/INCOMING_ACTIVITY' && action.payload.activity.type === 'trace') {
+                // // Get activity from action
+                // const { activity } = action.payload;
+
+                // // Check if the name attribute in the activity is `result`
+                // if (activity.name === 'result'){}
+                // console.log(action);
+                return;
+            }
+            if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
+                // console.log(username);
+                dispatch({
+                    type: 'WEB_CHAT/SEND_EVENT',
+                    payload: {
+                        name: 'webchat/join',
+                        from: id,
+                        value: { "name": username, "language": window.navigator.language }
+                    }
+                });
+            }
+            return next(action);
+        });
+
+        // render the WebChat and create DirectLine
+        window.WebChat.renderWebChat({
+            directLine: window.WebChat.createDirectLine({ domain, webSocket }),
+            userID: id,
+            store,
+            styleOptions: {
+                botAvatarInitials: 'Bot',
+                userAvatarInitials: 'User'
+            }
+        }, document.getElementById('webchat'));
+
+        document.querySelector('#webchat > *').focus();
+      })().catch(err => console.error(err));
+    </script>
+  </body>
+</html>

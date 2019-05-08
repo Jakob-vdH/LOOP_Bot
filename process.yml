@@ -1,0 +1,5 @@
+apps:
+  - script : ./bot/server.js
+    name: 'loop-bot'
+  - script : ./dl/index.js
+    name: 'directline-api'
