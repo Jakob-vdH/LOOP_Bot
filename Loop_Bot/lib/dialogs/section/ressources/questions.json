@@ -163,7 +163,7 @@
                     "texts": [
                         { "answerOption" : "Objekte derselben Klasse besitzen die gleichen Attributwerte"}
                     ],
-                    "right": true
+                    "right": false
                 },
                 {
                     "id": 2,
@@ -177,7 +177,7 @@
                     "texts": [
                         { "answerOption" : "Objekte derselben Klasse besitzen die gleichen Attribute"}
                     ],
-                    "right": false
+                    "right": true
                 },
                 {
                     "id": 4,
