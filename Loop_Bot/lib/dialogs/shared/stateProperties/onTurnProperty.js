@@ -7,16 +7,16 @@ const { EntityProperty } = require('./entityProperty');
  *   NLP results from LUIS.ai
  */
 class OnTurnProperty {
-    /**
-     * On Turn Property constructor.
-     *
-     * @param {String} intent intent name
-     * @param {EntityProperty []} entities Array of Entities
-     */
-    constructor(intent, entities) {
-        this.intent = intent || '';
-        this.entities = entities || [];
-    }
+  /**
+   * On Turn Property constructor.
+   *
+   * @param {String} intent intent name
+   * @param {EntityProperty []} entities Array of Entities
+   */
+  constructor(intent, entities) {
+    this.intent = intent || '';
+    this.entities = entities || [];
+  }
 }
 // /**
 //  *
@@ -43,10 +43,10 @@ class OnTurnProperty {
  * @param {Object} LUISResults
  * @returns {OnTurnProperty}
  */
-OnTurnProperty.intentFromLUISResults = function (LUISResults) {
-    let onTurnProperties = new OnTurnProperty();
-    onTurnProperties.intent = LuisRecognizer.topIntent(LUISResults, "None", 0.75);
-    return onTurnProperties;
+OnTurnProperty.intentFromLUISResults = function(LUISResults) {
+  let onTurnProperties = new OnTurnProperty();
+  onTurnProperties.intent = LuisRecognizer.topIntent(LUISResults, 'None', 0.6);
+  return onTurnProperties;
 };
 /**
  *
@@ -55,22 +55,22 @@ OnTurnProperty.intentFromLUISResults = function (LUISResults) {
  * @param {Object} cardValue context.activity.value from a card interaction
  * @returns {OnTurnProperty}
  */
-OnTurnProperty.fromCardInput = function (cardValue) {
-    // All cards used by this bot are adaptive cards with the card's 'data' property set to useful information.
-    let onTurnProperties = new OnTurnProperty();
-    for (var key in cardValue) {
-        if (!cardValue.hasOwnProperty(key)) continue;
-        // we do not need to keep the 'text' in on turn property
-        if (key.toLowerCase().trim() === 'text') {
-            continue;
-        }
-        if (key.toLowerCase().trim() === 'intent') {
-            onTurnProperties.intent = cardValue[key];
-        } else {
-            onTurnProperties.entities.push(new EntityProperty(key, [cardValue[key]]));
-        }
+OnTurnProperty.fromCardInput = function(cardValue) {
+  // All cards used by this bot are adaptive cards with the card's 'data' property set to useful information.
+  let onTurnProperties = new OnTurnProperty();
+  for (var key in cardValue) {
+    if (!cardValue.hasOwnProperty(key)) continue;
+    // we do not need to keep the 'text' in on turn property
+    if (key.toLowerCase().trim() === 'text') {
+      continue;
     }
-    return onTurnProperties;
+    if (key.toLowerCase().trim() === 'intent') {
+      onTurnProperties.intent = cardValue[key];
+    } else {
+      onTurnProperties.entities.push(new EntityProperty(key, [cardValue[key]]));
+    }
+  }
+  return onTurnProperties;
 };
 
 module.exports = OnTurnProperty;

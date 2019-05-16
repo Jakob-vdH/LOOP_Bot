@@ -27,7 +27,7 @@
                 "body":[
                     {
                         "type": "TextBlock",
-                        "text": " - Du kannst mir Fragen zu den Kursinhalten stellen.\n - Sollte ich merken, dass du mit einem Thema Herausforderungen hast, werde ich dir vorschlagen, wie du sie meistern kannst.\n - Nach jedem Kapitel kannst du mir Feedback geben. Bitte tu so, dass würde mir sehr weiterhelfen!",
+                        "text": " - Du kannst mir Fragen zu den Kursinhalten stellen.\n - Sollte ich merken, dass du mit einem Thema Herausforderungen\nhast, werde ich dir vorschlagen, wie du sie meistern kannst.\n - Nach jedem Kapitel kannst du mir Feedback geben. Bitte tu\ndies, das würde mir sehr weiterhelfen!",
                         "wrap": true
                     }
                 ]

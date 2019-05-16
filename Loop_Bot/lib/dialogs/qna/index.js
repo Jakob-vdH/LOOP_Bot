@@ -81,7 +81,7 @@ class QnADispatcher extends ComponentDialog {
             answer = answers[luis.intent];
           }
           saveLog(step.context.activity.from.id, question, '', true, step.context.activity.text, luis.intent, chapter);
-          if (chapter != undefined) {
+          if (chapter != undefined || step.options.luis) {
             return await step.prompt(TEXTPROMPT, MessageFactory.attachment(CardFactory.heroCard('', answer, [], ['Weiter'])));
           } else {
             await step.context.sendActivity(MessageFactory.attachment(CardFactory.heroCard('', answer)));
@@ -92,7 +92,7 @@ class QnADispatcher extends ComponentDialog {
           if (step.result && step.result === 'Weiter') {
             return await step.endDialog();
           } else if (step.result) {
-            return await step.replaceDialog(QNA_DISPATCHER_DIALOG);
+            return await step.replaceDialog(QNA_DISPATCHER_DIALOG, { luis: true });
           } else {
             return await step.endDialog();
           }
