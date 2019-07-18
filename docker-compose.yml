@@ -10,6 +10,9 @@ services:
       - "3000:3000"
     links:
       - mongo
+    depends_on:
+      - reverseproxy
+
   mongo:
     container_name: mongo
     image: mongo
@@ -17,3 +20,13 @@ services:
       - ./data:/data/db:rw
     ports:
       - "27017:27017"
+    depends_on:
+      - reverseproxy
+
+  reverseproxy:
+    image: reverseproxy
+    build: 
+      context: .
+      dockerfile: Dockerfile-Reverseproxy
+    ports:
+        - 80:80
